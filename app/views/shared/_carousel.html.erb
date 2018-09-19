@@ -1,34 +1,42 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div id="ocafi-carousel" class="carousel slide" data-ride="carousel">
+
+<div class="container container-carousel">
+  <div class="row row-carousel">
+    <div class="col-sm-12 col-carousel">
+      <div id="ocafi-carousel" class="carousel slide carousel-fullscreen carousel-fade" data-ride="carousel">
 
         <!-- indicators dot nav -->
         <ol class="carousel-indicators">
-          <li data-target="#my-slider"></li>
+          <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
         </ol>
 
         <!-- wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-
           <div class="item active">
-            <img src=<%= image_path('alianca1.jpg') %> alt="alianca" class="container-fluid carousel-item">
+            <img src=<%= image_path('alianca1.jpg') %> alt="alianca" style="width: 100%">
+            <div class="overlay"></div>
             <div class="carousel-caption">
-              <h1>Alianca first image</h1>
+              <h3>Alianca first image</h3>
+              <p>Lets check this out</p>
             </div>
           </div>
 
           <div class="item">
-            <img src=<%= image_path('alianca2.jpg') %> alt="alianca" class="container-fluid carousel-item">
+            <img src=<%= image_path('alianca2.jpg') %> alt="alianca" style="width: 100%">
+            <div class="overlay"></div>
             <div class="carousel-caption">
-              <h1>Alianca second image</h1>
+              <h3>Alianca second image</h3>
+              <p>Lets check this out</p>
             </div>
           </div>
 
           <div class="item">
-            <img src=<%= image_path('santaalina1.jpg') %> alt="alianca" class="container-fluid carousel-item">
+            <img src=<%= image_path('santaalina1.jpg') %> alt="alianca" style="width: 100%">
+            <div class="overlay"></div>
             <div class="carousel-caption">
-              <h1>Santa Alina first image</h1>
+              <h3>Santa Alina first image</h3>
+              <p>Lets check this out</p>
             </div>
           </div>
 
