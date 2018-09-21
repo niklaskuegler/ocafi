@@ -1,0 +1,56 @@
+.image_wrapper {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.image_section {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+}
+
+.image_section_content {
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.image_home {
+  padding: 0;
+}
+
+.content_home {
+  padding: 0;
+}
+
+//First content container images and text
+.style_first_image {
+  height: 500px;
+  width: 100%;
+  background-image: image-url("themovement.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.style_first_content {
+  height: 500px;
+  width: 100%;
+  background-color: $beige;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  padding-top: 24%;
+}
+
+.content_button {
+  margin-top: 3%;
+  height: 27px;
+  width: 160px;
+  border: 1px solid $gray;
+  background-color: $beige;
+  text-align: center;
+
+}
+
+// fix aspect ratio to always have squares
