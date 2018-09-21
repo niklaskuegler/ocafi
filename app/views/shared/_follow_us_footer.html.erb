@@ -1,12 +1,32 @@
 <div class="follow_us_basics">
-  <div class="follow_us_section row">
+  <div class="follow_us_section">
+    <div>
+    <%= image_tag "ocafi_logo.svg", height: 250 %>
+    </div>
+    <div class="follow_us_links">
+      <a class="fab fa-facebook-square icon_style" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ocafi/"></a>
+      <a class="fab fa-instagram icon_style" style="padding-left: 3%" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ocafi/"></a>
+    </div>
+    <div class="form_email_design">
+      <h5>Join the Newsletter</h5>
 
-    <form action="newsletters" method="post" path="newsletters">
-      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-      Email:<input type="text" name="email">
-      <input type="submit" value="Submit">
-    </form>
+      <form class="input-newsletter-style" action="newsletters" method="post" path="newsletters" >
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <input type="text" name="email" placeholder="Enter your Email" id="input-newsletter">
+        <button id="myBtn">Subscribe</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+
+            <p>You are almost signed up to our awesome Newsletter. We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.</p>
+            <p class="close">ok</p>
+          </div>
+        </div>
+      </form>
 
     </div>
   </div>
 </div>
+
