@@ -1,12 +1,18 @@
 <div class="follow_us_basics">
-  <div class="follow_us_section row">
+  <div class="follow_us_section">
+    <div>
+    <%= image_tag "ocafi_logo.svg", height: 250 %>
+    </div>
+    <div class="follow_us_links">
+      <a class="fab fa-facebook-square icon_style" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ocafi/"></a>
+      <a class="fab fa-instagram icon_style" style="padding-left: 3%" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ocafi/"></a>
+    </div>
+    <div class="form_email_design">
+      <h5>Join the Newsletter</h5>
 
-    <form action="newsletters" method="post" path="newsletters">
-      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-      Email:<input type="text" name="email">
-      <input type="submit" value="Submit">
-    </form>
+
 
     </div>
   </div>
 </div>
+
