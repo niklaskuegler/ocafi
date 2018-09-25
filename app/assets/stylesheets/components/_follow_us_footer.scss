@@ -1,8 +1,9 @@
 .follow_us_basics {
   background-color: $beige;
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   text-align: center;
+  max-height: 369px;
 }
 
 .follow_us_section {
@@ -17,7 +18,7 @@
 }
 
 .follow_us_links {
-
+  padding-bottom: 2%;
 }
 
 .icon_style {
@@ -52,4 +53,16 @@
   margin-right: 0;
   text-align: center;
   padding: 2px;
+}
+
+.logo-sizing {
+
+  @media (min-height: 600px) {
+    height: 30vh;
+  }
+
+  height: 40vh;
+  padding-top: 2%;
+
+
 }

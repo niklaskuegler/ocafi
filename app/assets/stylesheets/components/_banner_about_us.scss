@@ -1,0 +1,39 @@
+// banner homepage - UI component Le Wagon
+
+.banner-about-us {
+  color: white;
+  text-align: center;
+  min-height: 450px;
+  height: 45vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .image-about-us {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("banner-about-us.jpg");
+    background-size: cover !important;
+    background-position: center center;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
