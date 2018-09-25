@@ -4,13 +4,30 @@
 }
 
 .image_section {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
   margin-bottom: 7%;
 
   @media (max-width: 688px) {
     margin-bottom: 15%;
   }
+
+  @media (max-width: 1200px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
 
 }
 
@@ -33,6 +50,32 @@
   height: 50vh;
   width: 100%;
   background-image: image-url("themovement.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
+}
+
+.style_second_image {
+  height: 50vh;
+  width: 100%;
+  background-image: image-url("aliancafarmer.jpg");
+  //background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
+}
+
+.style_third_image {
+  height: 50vh;
+  width: 100%;
+  background-image: image-url("us.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
