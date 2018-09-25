@@ -6,7 +6,12 @@
 .image_section {
   padding-left: 15%;
   padding-right: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
+
+  @media (max-width: 688px) {
+    margin-bottom: 15%;
+  }
+
 }
 
 .image_section_content {
@@ -25,7 +30,7 @@
 
 //First content container images and text
 .style_first_image {
-  height: 500px;
+  height: 50vh;
   width: 100%;
   background-image: image-url("themovement.jpg");
   background-position: center center;
@@ -34,23 +39,6 @@
 
   @media (max-width: 720px) {
     height: 300px;
-  }
-
-}
-
-.style_first_content {
-  height: 500px;
-  width: 100%;
-  background-color: $beige;
-  padding-left: 15%;
-  padding-right: 15%;
-  text-align: center;
-  padding-top: 24%;
-
-  @media (max-width: 720px) {
-    height: 300px;
-    padding-top: 5%;
-    font-size: 12px;
   }
 }
 
@@ -66,32 +54,82 @@
 
 // fix aspect ratio to always have squares
 
+// no longer needed
 
-#content{
-  height: auto;
-  padding: 0;
-}
+// #content{
+//   height: auto;
+//   padding: 0;
+// }
 
-#content div{
-  height: auto;
-  position: relative;
+// #content div{
+//   height: auto;
+//   position: relative;
+//   text-align: center;
+//   padding: 18.75% 0 0;
+// }
+
+// #content p{
+//   width: 90%;
+//   left: 5%;
+//   padding: 10px;
+//   position: absolute;
+//   color: white;
+//   font-size: 1.6em;
+//   border: 1px solid white;
+//   border-radius: 5px;
+//   bottom: 50px;
+
+// }
+
+
+
+
+
+// Text content in boxes
+
+//Container for content are responsive
+
+.container-text-content {
   text-align: center;
-  padding: 18.75% 0 0;
+  height: 50%;
+  padding-right: 0%;
+  padding-left: 0;
 }
 
-#content p{
-  width: 90%;
-  left: 5%;
-  padding: 10px;
-  position: absolute;
-  color: white;
-  font-size: 1.6em;
-  border: 1px solid white;
-  border-radius: 5px;
-  bottom: 50px;
+.vertical-align-wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
 
+.vertical-align {
+  background: white;
+  display: table-cell;
+  height: 50vh;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  background-color: $beige;
+}
+
+.vertical-align--middle {
+  vertical-align: middle;
 }
 
 
+// .style_first_content {
+//   height: 500px;
+//   width: 100%;
+//   background-color: $beige;
+//   padding-left: 15%;
+//   padding-right: 15%;
+//   text-align: center;
+//   padding-top: 24%;
+
+//   @media (max-width: 720px) {
+//     height: 320px;
+//     padding-top: 5%;
+//     font-size: 12px;
+//   }
+// }
 
 
