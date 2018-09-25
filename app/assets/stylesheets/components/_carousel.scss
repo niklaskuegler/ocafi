@@ -4,6 +4,11 @@ body {
 
 /* carousel fullscreen */
 
+.carousel-inner {
+  height: 70vh;
+}
+
+
 .carousel-fullscreen .carousel-inner .item {
     height: calc(100vh - 70px);
     min-height: 600px;
@@ -22,6 +27,11 @@ body {
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+
+  @media (max-height: 720px) {
+    top: 35%;
+  }
+
 }
 
 /* overlay for better readibility of the caption  */
