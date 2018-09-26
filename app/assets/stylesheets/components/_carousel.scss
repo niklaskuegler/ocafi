@@ -32,6 +32,9 @@ body {
     top: 35%;
   }
 
+  @media (max-height: 600px) {
+    top: 30%;
+  }
 }
 
 /* overlay for better readibility of the caption  */
