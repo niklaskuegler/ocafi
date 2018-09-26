@@ -1,5 +1,5 @@
 .image_wrapper {
-  margin-top: 5%;
+  margin-top: 7%;
   margin-bottom: 5%;
 }
 
@@ -34,6 +34,9 @@
 .image_section_content {
   margin: 0 auto;
   width: 100%;
+
+  // Remove this maybe?
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 }
 
@@ -156,6 +159,11 @@
 
 .vertical-align--middle {
   vertical-align: middle;
+
+  @media (max-width: 720px) {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
 }
 
 

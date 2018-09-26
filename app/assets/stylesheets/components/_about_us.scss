@@ -1,0 +1,123 @@
+// banner About Us
+
+.banner-about-us {
+  color: white;
+  text-align: center;
+  height: 50vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .image-about-us {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("banner-about-us2.jpg");
+    background-size: cover !important;
+    background-position: center center;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.banner-about-us-text {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+
+// Cards about us
+
+.style_luis_image {
+  height: 50vh;
+  width: 100%;
+  background-image: image-url("luis.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
+}
+
+.style_niklas_image {
+  height: 50vh;
+  width: 100%;
+  background-image: image-url("niklas.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
+}
+
+.linkedin_style {
+  color: $gray-corporate;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+// Mission statement
+
+ .text_mission_statement {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 7%;
+  word-wrap: normal;
+
+  @media (max-width: 688px) {
+    margin-bottom: 15%;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+.mission_statement_box {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  background-color: $beige;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.text-right {
+  text-align: right;
+  padding-right: 1%;
+}
