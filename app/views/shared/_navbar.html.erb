@@ -9,6 +9,10 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
+    <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Our Coffees", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %>
+
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
