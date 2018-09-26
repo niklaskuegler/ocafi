@@ -24,6 +24,12 @@
 .icon_style {
   color: $gray-corporate;
   font-size: 60px;
+
+}
+
+a:hover, a:focus {
+  color: gray;
+  text-decoration: none;
 }
 
 .input-newsletter-style {
