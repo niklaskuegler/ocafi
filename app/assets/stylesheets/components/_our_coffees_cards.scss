@@ -1,0 +1,166 @@
+
+
+
+.image_wrapper-our-coffees {
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+.image_home_our_coffees {
+  padding:0;
+
+  .coffee-left {
+    padding-left: 5px;
+  }
+
+  .coffee-right {
+    padding-right: 5px;
+  }
+}
+
+.container-coffee {
+  margin-right: auto;
+  margin-left: auto;
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
+  padding-left: 15%;
+  padding-right: 15%;
+
+  @media (max-width: 1200px) {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+.card {
+  height: 500px;
+  background-size: cover !important;
+  background-position: center;
+  color: black;
+  position: relative;
+  margin-bottom: 15%;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+
+.card-distance {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+// Content in cards
+
+.image-part1 {
+  height: 50%;
+  background-image: image-url("farmer1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-part2 {
+  height: 50%;
+  background-image: image-url("farmer2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-part3 {
+  height: 50%;
+  background-image: image-url("farmer3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-part {
+  height: 50%;
+}
+
+// Vertical alignment for Text about coffee
+
+.container-text-content-coffee {
+  text-align: center;
+  height: 50%;
+  padding-right: 0%;
+  padding-left: 0;
+}
+
+.vertical-align-wrap-coffee {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.vertical-align-coffee {
+  background: white;
+  display: table-cell;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  background-color: $beige;
+}
+
+.vertical-align--middle-coffee {
+  vertical-align: middle;
+
+  @media (max-width: 720px) {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+
+.items-center {
+  text-align: center;
+}
