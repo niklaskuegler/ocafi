@@ -1,0 +1,10 @@
+<div class="banner">
+  <div class="image-about-us">
+    <div class="banner-text">
+      <% @farmers.each do |farmer| %>
+        <h2><%= farmer.first_name %></h2>
+        <p><%= farmer.last_name %></p>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  resources :farmers
+  resources :farmers, :path => "/our-coffees"
 
   resources :newsletters, only: [:create]
 
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/general-terms-conditions-purchase", to: "pages#general_terms_condition_purchase", as: "general_terms_condition_purchase"
 
   get "/privacy-policy", to: "pages#privacy_policy", as: "privacy_policy"
+
 
 
 
