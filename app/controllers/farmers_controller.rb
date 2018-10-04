@@ -37,4 +37,8 @@ class FarmersController < ApplicationController
     params.require(:farmer).permit(:first_name, :last_name, :farm_name, :origin, :region)
   end
 
+  def set_farmer
+    @farmer = Farner.find(params[:id])
+  end
+
 end
