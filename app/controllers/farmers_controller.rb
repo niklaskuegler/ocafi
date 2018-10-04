@@ -1,7 +1,8 @@
 class FarmersController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     @farmers = Farmer.all
-
   end
 
   def show

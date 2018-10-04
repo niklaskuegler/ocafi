@@ -1,12 +1,13 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!
-
-#only: [:home, :show, :farmer, :farmers, :our_coffee, :about_us, :mission_vision, :general_terms_condition_supply, :general_terms_condition_purchase, :privacy_policy]
+  skip_before_action :authenticate_user!, only: [:home, :show, :index, :farmer, :farmers, :our_coffee, :about_us, :mission_vision, :general_terms_condition_supply, :general_terms_condition_purchase, :privacy_policy]
 
   def home
   end
 
   def about_us
+  end
+
+  def our_coffees
   end
 
   def mission_vision
