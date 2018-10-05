@@ -1,0 +1,146 @@
+// Images
+.farm_image_section {
+
+}
+
+.img_farm {
+  height: 150px;
+  padding: 0;
+}
+
+.al1 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al1.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al2 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al2.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al3 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al3.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al4 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al4.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al5 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al5.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al6 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al6.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al7 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al7.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al8 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al8.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al9 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al9.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al10 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al10.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al11 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al11.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.al12 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al12.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+// Interview
+.text_interview {
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  word-wrap: normal;
+
+  @media (max-width: 688px) {
+    margin-bottom: 15%;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+.text_interview_padding_ocafi {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+// maybe needed later
+.text_below_carousel_wrapper {
+
+}
+

@@ -16,6 +16,12 @@ Rails.application.routes.draw do
 
   get "/privacy-policy", to: "pages#privacy_policy", as: "privacy_policy"
 
+  get "/our-coffee/fazenda-matao", to: "pages#fazenda_matao", as: "fazenda_matao"
+
+  get "/our-coffee/fazenda-santa-alina", to: "pages#fazenda_santa_alina", as: "fazenda_santa_alina"
+
+  get "/our-coffee/fazenda-alianca", to: "pages#fazenda_alianca", as: "fazenda_alianca"
+
 
 
 

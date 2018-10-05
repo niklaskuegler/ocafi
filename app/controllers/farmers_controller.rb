@@ -1,7 +1,8 @@
 class FarmersController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     @farmers = Farmer.all
-
   end
 
   def show
@@ -34,6 +35,10 @@ class FarmersController < ApplicationController
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
     params.require(:farmer).permit(:first_name, :last_name, :farm_name, :origin, :region)
+  end
+
+  def set_farmer
+    @farmer = Farner.find(params[:id])
   end
 
 end
