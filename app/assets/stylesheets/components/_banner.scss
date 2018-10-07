@@ -43,11 +43,26 @@
     align-items: center;
     justify-content: center;
   }
+
+  // Banner Alianca
+  .image-alianca {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al14.jpg");
+    background-size: cover !important;
+    background-position: center center;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 .banner-text {
   padding-left: 5%;
   padding-right: 5%;
+  width: 450px;
 }
 
 .banner p {
