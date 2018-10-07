@@ -1,0 +1,74 @@
+.border-left {
+  border-left: 1px solid black;
+
+  @media (max-width: 992px) {
+    border-left: 0;
+    border-top: 1px solid black;
+  }
+}
+
+.padding-coffee-show {
+  padding-left: 3vw;
+}
+
+.text-alignment {
+  text-align: left;
+}
+
+.text-description {
+  font-size: 18px;
+  width: 140px;
+}
+
+.flavor-description {
+  width: 80px;
+}
+
+.flavor-profile {
+  list-style: none;
+  padding: 0;
+}
+
+.flavor-profile-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+// Custom card
+.card-flavor-and-info {
+  height: 410px;
+  background-color: $beige;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+// Flavor profile
+.vanilla {
+  height: 50px;
+  width: 50px;
+  background-color: #f3e5ab;
+  border-radius: 30px;
+}
+
+.caramell {
+  height: 50px;
+  width: 50px;
+  background-color: #C68E17;
+  border-radius: 30px;
+}
+
+.margin-top-vertical-align {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
