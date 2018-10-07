@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .scroll-smoothly {
 
 }
@@ -7,9 +11,141 @@
 }
 
 .flex {
-
+  display: flex;
 }
 
 .overflow-auto {
+  overflow: auto;
+}
 
+.scroll-container {
+  height: 500px;
+}
+
+.image-sample {
+  height: 350px;
+  width: 300px;
+  background-color: red;
+
+
+}
+
+
+// Images
+.al1 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al1.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al2 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al2.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al3 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al3.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al4 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al4.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al5 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al5.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al6 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al6.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al7 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al7.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+.al8 {
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.3) 0%, rgba(30,30,30,0.3) 50%), image-url("alianca/al8.jpg");
+  background-size: cover !important;
+  background-position: center center;
+  width: 350px;
+  height: 300px;
+}
+
+
+
+
+.flex-none {
+  flex: none;
+}
+
+.l1st {
+
+  margin-left: 200px;
+
+  @media (max-width: 1200px) {
+    margin-left: 200px;
+  }
+
+  @media (max-width: 750px) {
+    margin-left: 150px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 50px;
+  }
+}
+
+.r1st {
+
+  margin-right: 200px;
+
+  @media (max-width: 1200px) {
+    margin-right: 200px;
+  }
+
+  @media (max-width: 750px) {
+    margin-right: 150px;
+  }
+
+  @media (max-width: 440px) {
+    margin-right: 50px;
+  }
+}
+
+.rr {
+
+  margin-left: 75px;
+
+  @media (max-width: 750px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 25px;
+  }
 }
