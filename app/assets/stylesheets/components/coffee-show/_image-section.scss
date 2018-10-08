@@ -20,6 +20,7 @@
 
 .scroll-container {
   height: 500px;
+  padding-top: 30px;
 }
 
 .image-sample {
@@ -34,10 +35,18 @@
 .coffee-show-header-container {
   width: 100%;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 // Images
+
+.grow-img-coffee:hover {
+    /* -webkit-transform: scale(1.03); */
+    transform: scale(1.1);
+}
+.grow-img-coffee {
+    transition: all .2s ease-in-out;
+  }
+
 .shadow {
   box-shadow: 0px 7px 32px 4px #888888;
 
