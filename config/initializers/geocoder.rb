@@ -7,7 +7,7 @@ Geocoder.configure(
   # use_https: false,           # use HTTPS for lookup requests? (if supported)
   # http_proxy: nil,            # HTTP proxy server (user:pass@host:port)
   # https_proxy: nil,           # HTTPS proxy server (user:pass@host:port)
-  # api_key: nil,               # API key for geocoding service
+  api_key: ENV['AIzaSyCSIQxHCqfuXrEjo-s3Qztzf-Bx36siPWI'],               # API key for geocoding service
   # cache: nil,                 # cache object (must respond to #[], #[]=, and #del)
   # cache_prefix: 'geocoder:',  # prefix (string) to use for all cache keys
 
@@ -19,4 +19,5 @@ Geocoder.configure(
   # Calculation options
   units: :km,                 # :km for kilometers or :mi for miles
   # distances: :linear          # :spherical or :linear
+  use_https: true,
 )
