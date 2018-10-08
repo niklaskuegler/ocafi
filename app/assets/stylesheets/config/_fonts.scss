@@ -29,4 +29,8 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 .farm-discription-headers {
   font-size: 30px;
   font-weight: 500;
+
+  @media (max-width: 400px) {
+    font-size: 27px;
+  }
 }

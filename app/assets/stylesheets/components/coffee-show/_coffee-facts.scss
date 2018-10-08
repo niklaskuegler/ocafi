@@ -47,7 +47,7 @@
 
 // Custom card
 .card-flavor-and-info {
-  height: 410px;
+  height: 360px;
   background-color: $beige;
   padding-top: 30px;
   padding-left: 30px;
@@ -65,6 +65,13 @@
   height: 50px;
   width: 50px;
   background-color: #C68E17;
+  border-radius: 30px;
+}
+
+.chocolate {
+  height: 50px;
+  width: 50px;
+  background-color: #7B3F00;
   border-radius: 30px;
 }
 
