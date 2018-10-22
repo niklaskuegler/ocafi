@@ -1,5 +1,5 @@
 class FarmersController < ApplicationController
-  skip_before_action :authenticate_user!
+   skip_before_action :authenticate_user!
 
   def index
     @farmers = Farmer.all
@@ -15,30 +15,18 @@ class FarmersController < ApplicationController
 
   def create
     @farmer = Farmer.new(farmer_params)
-
-    if @farmer.save
-      redirect_to @farmer, notice: 'Farm was successfully saved'
-    else
-      render :new
-    end
+    @farmer.save
   end
 
   def edit
   end
 
   def update
-    if @farmer = Farmer.update(farmer_params)
-      redirect_to @farmer, notice: 'Farm was successfully updated'
-    else
-      render :edit
-    end
-    #@farmer = Farmer.find(params[:id])
-    #@farmer.update(farmer_params)
+    @farmer = Farmer.find(params[:id])
+    @farmer.update(farmer_params)
   end
 
   def destroy
-    @farmer = Farmer.destroy
-    redirect_to farmers_url, notice: 'Farm was successfully destroyed'
   end
 
   private
@@ -52,5 +40,4 @@ class FarmersController < ApplicationController
   def set_farmer
     @farmer = Farner.find(params[:id])
   end
-
 end

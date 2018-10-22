@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :farmers
+  get    "restaurants", to: "restaurants#index"
+  get "farmers/new", to: "farmers#new"
+  post "farmers", to: "farmers#create"
+  get    "restaurants/:id", to: "restaurants#show"
+  get "farmers/:id/edit", to: "farmers#edit"
+  patch "farmers/:id", to: "farmers#update"
+  delete "farmers/:id", to: "farmers#destroy"
 
   resources :newsletters, only: [:create]
 

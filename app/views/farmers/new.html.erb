@@ -1,6 +1,32 @@
 <h1>test</h1>
 
-<div class="form-field">
+<div class="white-box">
+  <div class="form-header">
+    <h5>Create a new Farmer</h5>
+    <p>Please fill out everybox below</p>
+  </div>
+
+  <div class="form">
+    <div class="form-field">
+      <%= simple_form_for @farmer do |f| %>
+        <%= f.input :farm_name, class: "form-control" %>
+        <%= f.input :first_name, class: "form-control" %>
+        <%= f.input :last_name, class: "form-control" %>
+        <%= f.input :origin, class: "form-control" %>
+        <%= f.input :region, class: "form-control" %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!--<div class="form-field">
   <%= simple_form_for @farmer do |f| %>
     <%= f.input :farm_name, class: "form-control" %>
     <%= f.input :first_name, class: "form-control" %>
@@ -10,4 +36,6 @@
     <%= f.submit class: "btn-primary btn-sm" %>
   <% end %>
 </div>
+-->
+
 
