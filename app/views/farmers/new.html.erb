@@ -1,15 +1,13 @@
 <h1>test</h1>
 
-<%= form_for(@farmer) do |f| %>
-  <div class="form-group">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name, class: 'form-control' %>
-  </div>
+<div class="form-field">
+  <%= simple_form_for @farmer do |f| %>
+    <%= f.input :farm_name, class: "form-control" %>
+    <%= f.input :first_name, class: "form-control" %>
+    <%= f.input :last_name, class: "form-control" %>
+    <%= f.input :origin, class: "form-control" %>
+    <%= f.input :region, class: "form-control" %>
+    <%= f.submit class: "btn-primary btn-sm" %>
+  <% end %>
+</div>
 
-  <div class="form-group">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name, class: 'form-control' %>
-  </div>
-
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>

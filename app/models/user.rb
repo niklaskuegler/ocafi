@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates :username, presence: true
 
+  has_many :farmers
 end

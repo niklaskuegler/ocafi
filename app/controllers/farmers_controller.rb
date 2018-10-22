@@ -15,18 +15,30 @@ class FarmersController < ApplicationController
 
   def create
     @farmer = Farmer.new(farmer_params)
-    @farmer.save
+
+    if @farmer.save
+      redirect_to @farmer, notice: 'Farm was successfully saved'
+    else
+      render :new
+    end
   end
 
   def edit
   end
 
   def update
-    @farmer = Farmer.find(params[:id])
-    @farmer.update(farmer_params)
+    if @farmer = Farmer.update(farmer_params)
+      redirect_to @farmer, notice: 'Farm was successfully updated'
+    else
+      render :edit
+    end
+    #@farmer = Farmer.find(params[:id])
+    #@farmer.update(farmer_params)
   end
 
   def destroy
+    @farmer = Farmer.destroy
+    redirect_to farmers_url, notice: 'Farm was successfully destroyed'
   end
 
   private
