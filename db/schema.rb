@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_22_105632) do
+ActiveRecord::Schema.define(version: 2018_10_22_170558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,17 @@ ActiveRecord::Schema.define(version: 2018_10_22_105632) do
     t.string "farm_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "farmer_photo"
+    t.string "farm_landscape1"
+    t.string "farm_landscape2"
+    t.string "farm_landscape3"
+    t.string "farm_landscape4"
+    t.string "farm_landscape5"
+    t.string "farm_landscape6"
+    t.string "farm_landscape7"
+    t.string "farm_landscape8"
+    t.string "farm_landscape9"
+    t.string "farm_landscape10"
   end
 
   create_table "newsletters", force: :cascade do |t|
