@@ -16,6 +16,7 @@ class FarmersController < ApplicationController
   def create
     @farmer = Farmer.new(farmer_params)
     @farmer.save
+    redirect_to farmers_url
   end
 
   def edit

@@ -1,13 +1,26 @@
-<p>TEST</p>
-  ______________________________________________ <br>
+<div class="image_wrapper">
+  <div class="container-coffee">
+    <div class="row">
+      <% @farmers.each do |farmer| %>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <!-- insert <div class="card"> -->
+          <div class="card grow">
+            <div class="image-part1">
 
-
-<% @farmers.each do |farmer| %>
-  <%= farmer.farm_name %> <br>
-  <%= farmer.first_name %> <%= farmer.last_name %> <br>
-  <%= farmer.origin %>, <%= farmer.region %> <br>
-  ______________________________________________ <br>
-
-
-<% end %>
-
+            </div>
+            <div class="text-part">
+              <div class="vertical-align-wrap-coffee">
+                <div class="vertical-align-coffee vertical-align--middle-coffee">
+                  <div class="items-center">
+                    <h4><%= farmer.farm_name %> <br></h4>
+                    <h4><%= farmer.first_name %> <%= farmer.last_name %> <br></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
