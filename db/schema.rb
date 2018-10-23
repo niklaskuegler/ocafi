@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_105321) do
+ActiveRecord::Schema.define(version: 2018_10_23_130307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "coffees", force: :cascade do |t|
+    t.integer "bags"
+    t.string "process"
+    t.string "certification"
+    t.string "year"
+    t.float "price"
+    t.string "sku"
+    t.bigint "farmer_id"
+    t.integer "packaging"
+    t.string "batch"
+    t.string "score"
+    t.string "variety"
+    t.string "screensize"
+    t.string "flavor1"
+    t.string "flavor2"
+    t.string "flavor3"
+    t.string "flavor1_image"
+    t.string "flavor2_image"
+    t.string "flavor3_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["farmer_id"], name: "index_coffees_on_farmer_id"
+  end
 
   create_table "farmers", force: :cascade do |t|
     t.string "first_name"
@@ -59,4 +83,5 @@ ActiveRecord::Schema.define(version: 2018_10_23_105321) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "coffees", "farmers"
 end

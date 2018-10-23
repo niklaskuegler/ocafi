@@ -6,9 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Coffee.delete_all
+
+puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
+
 Farmer.delete_all
 
 puts "Everything should be deleted:  #{Farmer.all.length} Farmers "
+
+
+
+
 
 #Farmer.create(
 #  first_name: "Marco",
@@ -35,3 +43,5 @@ puts "Everything should be deleted:  #{Farmer.all.length} Farmers "
 #)
 
 puts "Everything should be created:  #{Farmer.all.length} Farmers "
+
+puts "Everything should be created:  #{Coffee.all.length} Farmers "

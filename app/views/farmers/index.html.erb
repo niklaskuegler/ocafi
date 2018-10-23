@@ -7,6 +7,12 @@
 
 <a class="button-learn-more" href="/farmers/new">New Farmer</a>
 
+<% if user_signed_in? %>
+  <p><%= current_user.username %></p>
+<% else %>
+  <p></p>
+<% end %>
+
 <%= render 'shared/follow_us_footer' %>
 
 
