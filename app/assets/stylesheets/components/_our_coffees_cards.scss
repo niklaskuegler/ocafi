@@ -100,11 +100,21 @@
 
 // Content in cards
 
+
+.card-test {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
 .size-img {
-height: 50%;
- background-position: center center;
+  height: 50%;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
 }
 
 .image-part1 {
