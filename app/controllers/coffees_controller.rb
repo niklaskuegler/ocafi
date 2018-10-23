@@ -16,7 +16,7 @@ class CoffeesController < ApplicationController
   def create
     @coffee = Coffee.new(coffee_params)
     @coffee.save
-    redirect_to coffees_url
+    redirect_to farmers_url
   end
 
   def edit
