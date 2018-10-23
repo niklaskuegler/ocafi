@@ -23,6 +23,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
 gem "figaro"
+gem "pundit"
 
 group :development do
   gem 'web-console', '>= 3.3.0'

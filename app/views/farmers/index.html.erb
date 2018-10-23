@@ -1,17 +1,21 @@
 <%= render 'shared/our_coffees/carousel_farmers' %>
 <%= render 'shared/our_coffees/text_about_our_coffee' %>
 
+<% if user_signed_in? %>
+  <% if current_user.email == "niklas@ocafi.de" %>
+    <div class="create-new-container">
+      <a class="button-creat-new" href="/farmers/new">New Farmer</a>
+      <a class="button-creat-new" href="/coffees/new">New Coffee</a>
+    </div>
+  <% end %>
+<% else %>
+<% end %>
+
 <%= render 'shared/our_coffees/index' %>
 
 <% render 'shared/our_coffees/our_coffees' %>
 
-<a class="button-learn-more" href="/farmers/new">New Farmer</a>
 
-<% if user_signed_in? %>
-  <p><%= current_user.username %></p>
-<% else %>
-  <p></p>
-<% end %>
 
 <%= render 'shared/follow_us_footer' %>
 

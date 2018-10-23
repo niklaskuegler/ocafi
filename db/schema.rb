@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_130307) do
+ActiveRecord::Schema.define(version: 2018_10_23_140032) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,8 @@ ActiveRecord::Schema.define(version: 2018_10_23_130307) do
     t.string "farm_landscape10"
     t.string "short_description"
     t.string "long_description"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_farmers_on_user_id"
   end
 
   create_table "newsletters", force: :cascade do |t|
@@ -84,4 +86,5 @@ ActiveRecord::Schema.define(version: 2018_10_23_130307) do
   end
 
   add_foreign_key "coffees", "farmers"
+  add_foreign_key "farmers", "users"
 end
