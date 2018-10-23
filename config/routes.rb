@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   patch "farmers/:id", to: "farmers#update"
   delete "farmers/:id", to: "farmers#destroy"
 
+  resources :coffees
+
   resources :newsletters, only: [:create]
 
   get "/about-us", to: "pages#about_us", as: "about_us"

@@ -16,7 +16,7 @@ class CoffeesController < ApplicationController
   def create
     @coffee = Coffee.new(coffee_params)
     @coffee.save
-    redirect_to farmers_url
+    redirect_to coffees_url
   end
 
   def edit
@@ -32,14 +32,14 @@ class CoffeesController < ApplicationController
 
   private
 
-  def farmer_params
+  def coffee_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
     params.require(:coffee).permit(:bags, :process, :certification, :year, :price, :sku, :farmer_id, :packaging, :batch, :score, :variety, :screensize, :flavor1, :flavor2, :flavor3, :flavor1_image, :flavor2_image, :flavor3_image)
   end
 
-  def set_farmer
-    @farmer = Farner.find(params[:id])
+  def set_coffee
+    @coffee = Coffee.find(params[:id])
   end
 
 
