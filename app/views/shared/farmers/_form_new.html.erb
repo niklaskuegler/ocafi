@@ -1,0 +1,12 @@
+<div class="form-field">
+  <%= simple_form_for @farmer do |f| %>
+    <%= f.input :farm_name, class: "form-control" %>
+    <%= f.input :first_name, class: "form-control" %>
+    <%= f.input :last_name, class: "form-control" %>
+    <%= f.input :origin, class: "form-control" %>
+    <%= f.input :region, class: "form-control" %>
+    <%= f.input :farmer_photo %>
+    <%= f.input :farmer_photo_cache, as: :hidden %>
+    <%= f.submit button_text, class: "btn-primary btn-sm" %>
+  <% end %>
+</div>

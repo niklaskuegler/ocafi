@@ -10,28 +10,28 @@ Farmer.delete_all
 
 puts "Everything should be deleted:  #{Farmer.all.length} Farmers "
 
-Farmer.create(
-  first_name: "Marco",
-  last_name: "Guardabaxo",
-  origin: "Brazil",
-  region: "Mogiana",
-  farm_name: "Mattao",
-)
+#Farmer.create(
+#  first_name: "Marco",
+#  last_name: "Guardabaxo",
+#  origin: "Brazil",
+#  region: "Mogiana",
+#  farm_name: "Mattao",
+#)
 
-Farmer.create(
-  first_name: "Jorge",
-  last_name: "Alina",
-  origin: "Brazil",
-  region: "Mogiana",
-  farm_name: "Santa Alina",
-)
+#Farmer.create(
+#  first_name: "Jorge",
+#  last_name: "Alina",
+#  origin: "Brazil",
+#  region: "Mogiana",
+#  farm_name: "Santa Alina",
+#)
 
-Farmer.create(
-  first_name: "Paulo",
-  last_name: "Aliança",
-  origin: "Brazil",
-  region: "Mogiana",
-  farm_name: "Aliança",
-)
+#Farmer.create(
+#  first_name: "Paulo",
+#  last_name: "Aliança",
+#  origin: "Brazil",
+#  region: "Mogiana",
+#  farm_name: "Aliança",
+#)
 
 puts "Everything should be created:  #{Farmer.all.length} Farmers "

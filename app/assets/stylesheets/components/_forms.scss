@@ -1,0 +1,26 @@
+.white-box {
+  color: black;
+  padding: 2px 2px;
+  width: 80vw;
+  height: 1600px;
+  padding: 5% 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+}
+
+.form-header {
+  display: inline
+}
+
+.form-sizing {}
+
+.form-banner{
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  align-items: center;
+  background-position: center;
+}

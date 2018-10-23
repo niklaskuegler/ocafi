@@ -1,15 +1,50 @@
-<h1>test</h1>
-
-<%= form_for(@farmer) do |f| %>
-  <div class="form-group">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name, class: 'form-control' %>
+<div class="white-box" style="background-color: light-gray;">
+  <div class="form-header">
+    <h5>Create a new Farmer</h5>
+    <p>Please fill out everybox below</p>
   </div>
-
-  <div class="form-group">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name, class: 'form-control' %>
+  <div class="form">
+    <div class="form-field">
+      <%= simple_form_for @farmer do |f| %>
+        <%= f.input :farm_name, class: "form-control" %>
+        <%= f.input :first_name, class: "form-control" %>
+        <%= f.input :last_name, class: "form-control" %>
+        <%= f.input :origin, class: "form-control" %>
+        <%= f.input :region, class: "form-control" %>
+        <%= f.input :short_description, class: "form-control" %>
+        <%= f.input :long_description, class: "form-control" %>
+        <%= f.input :farmer_photo %>
+        <%= f.input :farm_landscape1 %>
+        <%= f.input :farm_landscape2 %>
+        <%= f.input :farm_landscape3 %>
+        <%= f.input :farm_landscape4 %>
+        <%= f.input :farm_landscape5 %>
+        <%= f.input :farm_landscape6 %>
+        <%= f.input :farm_landscape7 %>
+        <%= f.input :farm_landscape8 %>
+        <%= f.input :farm_landscape9 %>
+        <%= f.input :farm_landscape10 %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
   </div>
+</div>
 
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+
+
+
+
+
+<!--<div class="form-field">
+  <%= simple_form_for @farmer do |f| %>
+    <%= f.input :farm_name, class: "form-control" %>
+    <%= f.input :first_name, class: "form-control" %>
+    <%= f.input :last_name, class: "form-control" %>
+    <%= f.input :origin, class: "form-control" %>
+    <%= f.input :region, class: "form-control" %>
+    <%= f.submit class: "btn-primary btn-sm" %>
+  <% end %>
+</div>
+-->
+
+

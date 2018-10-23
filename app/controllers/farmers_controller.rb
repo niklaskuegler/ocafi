@@ -16,6 +16,7 @@ class FarmersController < ApplicationController
   def create
     @farmer = Farmer.new(farmer_params)
     @farmer.save
+    redirect_to farmers_url
   end
 
   def edit
@@ -34,7 +35,7 @@ class FarmersController < ApplicationController
   def farmer_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
-    params.require(:farmer).permit(:first_name, :last_name, :farm_name, :origin, :region)
+    params.require(:farmer).permit(:first_name, :last_name, :farm_name, :origin, :region, :farmer_photo, :farm_landscape1, :farm_landscape2, :farm_landscape3, :farm_landscape4, :farm_landscape5, :farm_landscape6, :farm_landscape7, :farm_landscape8, :farm_landscape9, :farm_landscape10, :short_description, :long_description)
   end
 
   def set_farmer
