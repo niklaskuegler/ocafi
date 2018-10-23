@@ -1,4 +1,34 @@
+// Title
+.header_coffee {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  word-wrap: normal;
 
+  @media (max-width: 688px) {
+    margin-bottom: 15%;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+.header_coffee_padding {
+  padding-bottom: 1%;
+}
 
 
 .image_wrapper-our-coffees {
