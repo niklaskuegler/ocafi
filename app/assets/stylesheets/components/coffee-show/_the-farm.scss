@@ -1,6 +1,10 @@
 .padding-top-none {
   padding-top: 0;
   padding-bottom: 5%;
+
+  @media (max-width: 440px) {
+    padding-bottom: 0;
+  }
 }
 
 .blocksatz {
