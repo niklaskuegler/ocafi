@@ -8,10 +8,15 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %>
+    <div class="link-container vertical-align-link vertical-align--middle">
+      <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
+    <div class="link-container">
+      <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
+    <div class="link-container">
+      <%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
 
     <% if user_signed_in? %>
 
