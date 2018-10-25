@@ -87,3 +87,19 @@
   padding-left: 5%;
   display: inline;
 }
+
+// Navbar hover
+.link-container {
+  height: 70px;
+}
+
+
+.vertical-align-link {
+  display: table-cell;
+  height: 70px;
+  padding-top: 25px;
+}
+
+.vertical-align-link--middle {
+  vertical-align: middle;
+}
