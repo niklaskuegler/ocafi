@@ -34,22 +34,13 @@
 .icon_style {
   color: $gray-corporate;
   font-size: 60px;
-
 }
 
 a:hover, a:focus {
-  color: gray;
   text-decoration: none;
+  color: gray;
 }
 
-.input-newsletter-style {
-  label {
-
-  }
-  input {
-
-  }
-}
 
 #send-btn {
   border: 0;
