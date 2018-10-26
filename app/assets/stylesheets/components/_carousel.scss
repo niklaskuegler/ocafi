@@ -32,11 +32,11 @@ body {
     transform: translate(0, -50%);
 
   @media (max-height: 720px) {
-    top: 35%;
+    top: 45%;
   }
 
   @media (max-height: 600px) {
-    top: 30%;
+    top: 37%;
   }
 }
 
@@ -59,12 +59,28 @@ h1,h2,h3,h4 {
 }
 
 .super-heading {
-    font-size: 70px;
+  font-size: 70px;
+
+  @media (max-height: 720px) {
+    font-size: 50px;
+  }
+
+  @media (max-height: 600px) {
+    font-size: 30px;
+  }
 }
 
 
 .super-paragraph {
-    font-size: 30px; font-weight: 300;
+  font-size: 30px; font-weight: 300;
+
+  @media (max-height: 720px) {
+  font-size: 20px;
+  }
+
+  @media (max-height: 600px) {
+    font-size: 15px;
+  }
 }
 
 .carousel-caption .super-paragraph a,
@@ -134,18 +150,19 @@ h1,h2,h3,h4 {
 /* carousel fullscreen - vertically centered caption*/
 
 .carousel-fullscreen .carousel-caption {
-    top: 67%;
+    top: 47%;
     bottom: auto;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
   @media (max-height: 720px) {
-    top: 60%;
+    top: 40%;
   }
 
   @media (max-height: 600px) {
-    top: 55%;
+    top: 34%;
+
   }
 }
 
@@ -168,7 +185,15 @@ h1,h2,h3,h4 {
 }
 
 .super-heading {
-    font-size: 70px;
+  font-size: 70px;
+
+  @media (max-height: 720px) {
+    font-size: 50px;
+  }
+
+  @media (max-height: 600px) {
+    font-size: 30px;
+  }
 }
 
 
