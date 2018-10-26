@@ -4,7 +4,7 @@
   background: $white;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  padding-left: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,13 +97,27 @@
   height: 70px;
 }
 
+.link-container:hover {
+  background-color: gray;
+}
 
 .vertical-align-link {
-  display: table-cell;
-  height: 70px;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
-.vertical-align-link--middle {
-  vertical-align: middle;
+.vertical-align-link-a {
+  padding-top: 28px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
+.navbar-a {
+  a:hover, a:focus {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+
+
