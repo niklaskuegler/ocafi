@@ -50,11 +50,19 @@
 .banner-p {
   p a {
     color: white;
-    font-size: 2em;
+    font-size: 35px;
     text-decoration: none;
     display: inline-block;
     position: relative;
     font-family: 'Dosis', sans-serif;
+
+  @media (max-height: 720px) {
+    font-size: 30px;
+  }
+
+  @media (max-height: 600px) {
+    font-size: 25px;
+  }
   }
 
   p a:hover {

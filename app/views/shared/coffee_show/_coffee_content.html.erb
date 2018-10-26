@@ -5,9 +5,9 @@
     <div class="header_coffee header_coffee_padding">
       <div class="text-padding-ocafi ">
         <% if @farmers.coffees.length == 1 %>
-          <h5 class="farm-discription-headers">About this farms coffee</h5>
+          <h5 class="farm-discription-headers">His Coffee - Catuai</h5>
         <% else %>
-          <h5 class="farm-discription-headers">About this farms first coffee</h5>
+          <h5 class="farm-discription-headers">His Coffee - Catuai</h5>
         <% end %>
       </div>
     </div>
@@ -18,12 +18,14 @@
   <div class="image_section">
     <div class="image_section_content row">
       <div class=" col-md-6 container-text-content text-alignment card-flavor-and-info">
-        <h5 class="farm-discription-headers">Technical Information</h5><br>
-        <ul class="flavor-profile">
-          <li class="flavor-profile-item"><p class="text-description">Region: </p><p><%= @farmers.region %></p></li>
-          <li class="flavor-profile-item"><p class="text-description">Crop Year: </p><p><%= @farmers.coffees.first.year %></p></li>
-          <li class="flavor-profile-item"><p class="text-description">Process Type: </p><p><%= @farmers.coffees.first.process %></p></li>
-          <li class="flavor-profile-item"><p class="text-description">Variety: </p><p>Catuai</p></li>
+        <div class="flavor-and-info">
+          <h5 class="farm-discription-headers">Technical Information</h5><br>
+          <ul class="flavor-profile">
+            <li class="flavor-profile-item"><p class="text-description">Region: </p><p><%= @farmers.region %></p></li>
+            <li class="flavor-profile-item"><p class="text-description">Crop Year: </p><p><%= @farmers.coffees.first.year %></p></li>
+            <li class="flavor-profile-item"><p class="text-description">Process Type: </p><p><%= @farmers.coffees.first.process %></p></li>
+            <li class="flavor-profile-item"><p class="text-description">Variety: </p><p>Catuai</p></li>
+        </div>
         </ul>
       </div>
       <div class=" col-md-6 container-text-content border-left text-alignment card-flavor-and-info">
@@ -31,22 +33,17 @@
         <ul class="flavor-profile">
           <li class="flavor-profile-item">
             <div class="flavor-description">
-              <div class="vanilla"></div>
+              <div class="vanilla" style=" background-image: url('<%= @farmers.coffees.last.flavor1_image  %>')"></div>
             </div>
               <p class="margin-top-vertical-align"><%= @farmers.coffees.first.flavor1 %></p>
           </li>
           <li class="flavor-profile-item">
             <div class="flavor-description">
-              <div class="caramell"></div>
+              <div class="vanilla" style=" background-image: url('<%= @farmers.coffees.last.flavor2_image  %>')"></div>
             </div>
               <p class="margin-top-vertical-align"><%= @farmers.coffees.first.flavor2 %></p>
           </li>
-          <li class="flavor-profile-item">
-            <div class="flavor-description">
-              <div class="chocolate"></div>
-            </div>
-              <p class="margin-top-vertical-align"><%= @farmers.coffees.first.flavor3 %></p>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -57,7 +54,7 @@
     <div class="container-text-content">
       <div class="header_coffee header_coffee_padding">
         <div class="text-padding-ocafi ">
-          <h5 class="farm-discription-headers">About this farms second coffee</h5>
+          <h5 class="farm-discription-headers">His Coffee - Amarello</h5>
         </div>
       </div>
     </div>
@@ -103,3 +100,4 @@
   <% end %>
 
 </div>
+

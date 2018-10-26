@@ -47,10 +47,11 @@
 
 // Custom card
 .card-flavor-and-info {
-  height: 360px;
+  height: 350px;
   background-color: $beige;
   padding-top: 30px;
   padding-left: 30px;
+  //display: flex;
 }
 
 // Flavor profile
@@ -79,3 +80,18 @@
   margin-top: 15px;
   margin-bottom: 0;
 }
+
+// split into two parts
+.vanilla {
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+
+}
+
+// Flavor size
+
+
