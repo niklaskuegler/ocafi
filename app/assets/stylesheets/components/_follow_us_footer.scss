@@ -29,6 +29,28 @@
 
 .follow_us_links {
   margin-bottom: 15px;
+    width: 100%;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+
+}
+
+.follow-us-inner {
+  width: 120px;
+  display: flex;
 }
 
 .icon_style {
@@ -36,9 +58,12 @@
   font-size: 60px;
 }
 
-a:hover, a:focus {
-  text-decoration: none;
-  color: gray;
+.follow-us-p {
+  width: 60px;
+  a:hover, a:focus {
+    text-decoration: none;
+    color: gray;
+  }
 }
 
 

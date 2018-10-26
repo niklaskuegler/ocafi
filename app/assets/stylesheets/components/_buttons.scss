@@ -11,12 +11,6 @@
     color: $black;
     opacity: 1;
 
-  &:hover {
-    opacity: 0.7;
-    text-decoration: none;
-    color: $gray-corporate;
-
-  }
 }
 
 .create-new-container {
@@ -53,23 +47,21 @@
   color: white;
 }
 
-p a {
-  color: white;
-  font-size: 2em;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  font-family: 'Dosis', sans-serif;
-}
+.banner-p {
+  p a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+  }
 
-p a:hover {
-  color: white;
-}
+  p a:hover {
+    color: white;
+  }
 
-
-
-
-a.effect-underline:after {
+  a.effect-underline:after {
   color: white;
   content: '';
   position: absolute;
@@ -84,10 +76,25 @@ a.effect-underline:after {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
+  }
+
+  a.effect-underline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
-a.effect-underline:hover:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
