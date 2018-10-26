@@ -15,8 +15,18 @@
 }
 
 /* Logo */
+.slogan-logo-container {
+  display: flex;
+}
+
 .navbar-wagon-brand img {
   height: 50px;
+}
+
+.ocafi-trading-slogan {
+  padding-top: 13px;
+  padding-left: 20px;
+  font-weight: 700;
 }
 
 /* User Avatar */
@@ -89,6 +99,16 @@
   color: black;
   padding-left: 5%;
   display: inline;
+}
+
+//for mobile
+
+.mobile-padding-right {
+
+  @media (max-width: 992px) {
+   padding-right: 30px;
+ }
+
 }
 
 // Navbar hover
