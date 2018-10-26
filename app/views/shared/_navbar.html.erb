@@ -8,14 +8,43 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <div class="link-container vertical-align-link vertical-align--middle">
-      <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <div class="link-container vertical-align-link ">
+      <div class="navbar-a">
+        <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
+      </div>
     </div>
-    <div class="link-container">
-      <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %>
+
+
+
+
+    <div class="link-container vertical-align-link ">
+      <div class="farmers-testing">
+        <div class="navbar-a nav-item-dropdown">
+          <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a dropdown-trigger" %>
+          <ul class="dropdown-menu">
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Mataõ</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Aliança</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Santa Alina</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="link-container">
-      <%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %>
+
+
+
+
+
+    <div class="link-container vertical-align-link">
+      <div class="navbar-a">
+        <%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
+      </div>
     </div>
 
     <% if user_signed_in? %>
@@ -30,7 +59,10 @@
         <div class="dropdown">
           <% if user_signed_in? %>
             <div class="dropdown">
-              <i style="padding-right: 10px;" class="dropdown-toggle" data-toggle="dropdown">Welcome, <%= current_user.username %></i>
+              <i style="padding-right: 10px; font-size: 14px; font-family: 'Roboto', sans-serif;" class="dropdown-toggle" data-toggle="dropdown">
+                Welcome, <%= current_user.username %>
+
+                </i>
               <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
                 <li>
@@ -59,7 +91,11 @@
       </div>
       <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <div class="link-container vertical-align-link ">
+        <div class="navbar-a">
+          <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
+        </div>
+      </div>
     <% end %>
   </div>
 

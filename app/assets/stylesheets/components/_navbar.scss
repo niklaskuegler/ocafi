@@ -4,10 +4,14 @@
   background: $white;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  padding-left: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.9;
 }
 
 /* Logo */
@@ -93,13 +97,113 @@
   height: 70px;
 }
 
-
-.vertical-align-link {
-  display: table-cell;
-  height: 70px;
-  padding-top: 25px;
+.link-container:hover {
+  background-color: gray;
 }
 
-.vertical-align-link--middle {
-  vertical-align: middle;
+.vertical-align-link {
+  padding-top: 22px;
+}
+
+.vertical-align-link-a {
+  padding-top: 28px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-a {
+  a:hover, a:focus {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+//navbar dropdown coffees
+
+.farmers-testing {
+
+  .nav-item-dropdown {
+    position: relative;
+
+    &:hover > .dropdown-menu {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .dropdown-trigger {
+    position: relative;
+
+    &:focus + .dropdown-menu {
+      display: block;
+      opacity: 1;
+    }
+
+    &::after {
+      position: absolute;
+      color: $black;
+      font-size: 14px;
+      font-weight: bold;
+      transform: rotate(90deg);
+      top: -5px;
+      right: -15px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $white;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    top: 48px;
+    right: -10px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 120px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    a {
+      color: $black;
+      padding-top: 5px;
+    }
+
+    a:hover {
+      background-color: red;
+    }
+  }
+
+  .dropdown-menu > li > a:hover {
+      text-decoration: none;
+      color: white;
+      background-color: gray;
+  }
+
+  .dropdown-menu-item {
+    cursor: pointer;
+    text-align: left;
+    height: 40px;
+
+    .styling {
+      padding: 10px;
+    }
+
+    &:hover {
+    }
+
+    a {
+      font-size: 14px;
+      height: 100%;
+      padding-top: 7px;
+    }
+
+    a:hover {
+
+    }
+  }
+
 }
