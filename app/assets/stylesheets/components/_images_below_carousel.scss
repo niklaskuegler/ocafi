@@ -26,9 +26,6 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-
-
-
 }
 
 .image_section_content {
@@ -37,7 +34,6 @@
 
   // Remove this maybe?
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
 }
 
 .image_home {
@@ -181,5 +177,10 @@
 //     font-size: 12px;
 //   }
 // }
+
+.subheading-margins {
+  margin-top: 6px;
+  margin-bottom: -10px;
+}
 
 
