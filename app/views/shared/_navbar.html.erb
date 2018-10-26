@@ -9,9 +9,6 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-
-
-
     <div class="link-container vertical-align-link ">
       <div class="navbar-a">
         <%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
@@ -21,12 +18,28 @@
 
 
 
-
     <div class="link-container vertical-align-link ">
-      <div class="navbar-a">
-        <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
+      <div class="farmers-testing">
+        <div class="navbar-a nav-item-dropdown">
+          <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a dropdown-trigger" %>
+          <ul class="dropdown-menu">
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Mataõ</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Aliança</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a class="styling" href="#">Fazenda Santa Alina</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
+
+
+
 
     <div class="link-container vertical-align-link">
       <div class="navbar-a">

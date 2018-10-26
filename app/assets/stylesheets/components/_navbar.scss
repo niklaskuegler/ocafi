@@ -119,5 +119,91 @@
   }
 }
 
+//navbar dropdown coffees
 
+.farmers-testing {
 
+  .nav-item-dropdown {
+    position: relative;
+
+    &:hover > .dropdown-menu {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .dropdown-trigger {
+    position: relative;
+
+    &:focus + .dropdown-menu {
+      display: block;
+      opacity: 1;
+    }
+
+    &::after {
+      position: absolute;
+      color: $black;
+      font-size: 14px;
+      font-weight: bold;
+      transform: rotate(90deg);
+      top: -5px;
+      right: -15px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $white;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    top: 48px;
+    right: -10px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 120px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    a {
+      color: $black;
+      padding-top: 5px;
+    }
+
+    a:hover {
+      background-color: red;
+    }
+  }
+
+  .dropdown-menu > li > a:hover {
+      text-decoration: none;
+      color: white;
+      background-color: gray;
+  }
+
+  .dropdown-menu-item {
+    cursor: pointer;
+    text-align: left;
+    height: 40px;
+
+    .styling {
+      padding: 10px;
+    }
+
+    &:hover {
+    }
+
+    a {
+      font-size: 14px;
+      height: 100%;
+      padding-top: 7px;
+    }
+
+    a:hover {
+
+    }
+  }
+
+}
