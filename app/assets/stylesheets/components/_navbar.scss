@@ -36,7 +36,6 @@
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
-  padding: 0 20px;
 }
 
 /* Navbar link */
@@ -45,7 +44,7 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: $white;
   text-decoration: none;
 }
 
@@ -122,6 +121,13 @@
 //navbar dropdown coffees
 
 .farmers-testing {
+
+  p {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    padding-top: 26px;
+    margin: 0;
+  }
 
   .nav-item-dropdown {
     position: relative;
@@ -206,4 +212,11 @@
     }
   }
 
+  .spacing-top-private {
+    top: 70px;
+  }
+
 }
+
+
+
