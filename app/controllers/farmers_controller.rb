@@ -1,5 +1,5 @@
 class FarmersController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: :index
 
 
   def index
@@ -12,12 +12,14 @@ class FarmersController < ApplicationController
 
   def new
     @farmer = Farmer.new
+    @user = current_user
   end
 
   def create
     @farmer = Farmer.new(farmer_params)
+    @farmer.user_id = current_user.id
     if @farmer.save
-      redirect_to farmers_url, notice: 'Farmer was successfully created'
+      redirect_to farmers_url, notice: "Farmer was successfully created"
     else
       render :new
     end

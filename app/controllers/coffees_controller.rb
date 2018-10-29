@@ -1,5 +1,5 @@
 class CoffeesController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: :destroy
 
   def index
     @coffees = Coffee.all
@@ -15,6 +15,7 @@ class CoffeesController < ApplicationController
 
   def create
     @coffee = Coffee.new(coffee_params)
+
     @coffee.save
     redirect_to farmers_url
   end
