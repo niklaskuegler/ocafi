@@ -2,8 +2,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   devise_for :users
 
-
-
   resources :farmers
   get    "restaurants", to: "restaurants#index"
   get "farmers/new", to: "farmers#new"
