@@ -1,17 +1,54 @@
 // Cards about us
 
 .style_luis_image {
-  height: 50vh;
+  height: 100%;
   width: 100%;
   background-image: image-url("luis.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .3s;
 
   @media (max-width: 720px) {
     height: 300px;
   }
 }
+
+.style_img_about_us{
+  height: 50vh;
+  width: 100%;
+  position: relative;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
+
+}
+
+.style_luis_image:hover {
+  filter:blur(2px) brightness(40%);
+}
+
+.style_img_about_us p {
+  padding-left: 10%;
+  padding-right: 10%;
+  position: absolute;
+  top: 40%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+
+.style_img_about_us:hover p {
+  opacity: 1;
+}
+
+
+
+
 
 .style_niklas_image {
   height: 50vh;
@@ -20,10 +57,16 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .3s;
+
 
   @media (max-width: 720px) {
     height: 300px;
   }
+}
+
+.style_niklas_image:hover {
+  filter:blur(2px) brightness(40%);
 }
 
 .linkedin_style {
