@@ -7,7 +7,7 @@ body {
 .height-management {
 
 .carousel-inner {
-  height: 80vh;
+  height: 70vh;
 }
 
 
@@ -18,7 +18,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
 }
 
 
@@ -32,11 +32,11 @@ body {
     transform: translate(0, -50%);
 
   @media (max-height: 720px) {
-    top: 45%;
+    top: 42%;
   }
 
   @media (max-height: 600px) {
-    top: 37%;
+    top: 35%;
   }
 }
 
