@@ -1,5 +1,5 @@
 class CoffeesController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: :destroy
 
   def index
     @coffees = Coffee.all
