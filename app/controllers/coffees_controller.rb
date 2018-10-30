@@ -1,5 +1,5 @@
 class CoffeesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :destroy
+  before_action :authenticate_user!, :except => [:index, :show]
 
   def index
     @coffees = Coffee.all
