@@ -18,8 +18,6 @@
     </div>
 
 
-
-
     <div class="link-container vertical-align-link ">
       <div class="farmers-testing">
         <div class="navbar-a nav-item-dropdown">
@@ -100,6 +98,12 @@
 
 
 
+
+        </div>
+      </div>
+      <div class="link-container vertical-align-link ">
+        <div class="navbar-a">
+          <%= link_to "#{current_order.order_items.size} Items in Cart ( #{number_to_currency current_order.subtotal} )", cart_path, class: "btn btn-link" %>
         </div>
       </div>
       <% else %>
@@ -109,6 +113,7 @@
           <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
         </div>
       </div>
+
     <% end %>
   </div>
 
