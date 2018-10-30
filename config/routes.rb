@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
+  get 'order_items/create'
+  get 'order_items/update'
+  get 'order_items/destroy'
+  get 'carts/show'
   root to: 'pages#home'
   devise_for :users
 
+  resource :cart, only: [:show]
+  resources :order_items, only: [:create, :update, :destroy]
+
   resources :farmers
-  get    "restaurants", to: "restaurants#index"
-  get "farmers/new", to: "farmers#new"
-  post "farmers", to: "farmers#create"
-  get    "restaurants/:id", to: "restaurants#show"
-  get "farmers/:id/edit", to: "farmers#edit"
-  patch "farmers/:id", to: "farmers#update"
-  delete "farmers/:id", to: "farmers#destroy"
 
   resources :coffees
 
