@@ -112,6 +112,7 @@ ActiveRecord::Schema.define(version: 2018_10_30_152831) do
     t.string "vat_number"
     t.string "special_request"
     t.string "pickup_delivery"
+    t.string "customer_phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["order_status_id"], name: "index_orders_on_order_status_id"

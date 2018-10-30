@@ -24,6 +24,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.string :vat_number
       t.string :special_request
       t.string :pickup_delivery
+      t.string :customer_phone
 
       t.timestamps
     end
