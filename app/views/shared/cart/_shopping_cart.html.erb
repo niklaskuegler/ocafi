@@ -1,0 +1,5 @@
+<h1>Shopping cart - something should be displayed below</h1>
+<% @order_items.each do |order_item| %>
+  <p><%= coffee.variety %></p>
+  <p><%= order_item.unit_price %></p>
+<% end %>
