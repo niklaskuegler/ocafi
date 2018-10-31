@@ -1,3 +1,17 @@
 <div class="shopping-cart">
   <%= render "shopping_cart" %>
 </div>
+
+<h1>test</h1>
+<%= OrderItem.first.unit_price %>
+
+order item price: <%= OrderItem.first.unit_price %> <br>
+Order id: <%= Order.first.id %> <br>
+current_user id: <%= current_user.id %>
+
+
+
+
+<%= render 'shared/cart/shopping_cart' %>
+<%= render 'shared/follow_us_footer' %>
+

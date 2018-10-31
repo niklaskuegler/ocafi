@@ -1,4 +1,13 @@
 class OrderItemsController < ApplicationController
+
+  def index
+    @order_items = OrderItem.all
+  end
+
+  def show
+    @order_items = OrderItem.find(params[:id])
+  end
+
   def create
     @order = current_order
     @order_item = @order.order_items.new(order_item_params)
@@ -24,6 +33,10 @@ class OrderItemsController < ApplicationController
 
   def order_item_params
     params.require(:order_item).permit(:quantity, :coffee_id)
+  end
+
+  def set_order_item
+    @order_item = OrderItem.find(params[:id])
   end
 
 end

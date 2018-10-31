@@ -1,5 +1,10 @@
 <h3 class="text-center">Products for Sale</h3>
 
+order item price: <%= OrderItem.first.unit_price %> <br>
+Order id: <%= Order.first.id %> <br>
+current_user id: <%= current_user.id %>
+
+
 <div class="row">
   <div class="col-xs-6 col-xs-offset-3">
     <% @coffees.each do |coffee| %>
