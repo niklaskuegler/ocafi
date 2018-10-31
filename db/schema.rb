@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_31_122414) do
+ActiveRecord::Schema.define(version: 2018_10_31_144955) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +38,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_122414) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "active"
+    t.string "name"
     t.index ["farmer_id"], name: "index_coffees_on_farmer_id"
   end
 
@@ -92,9 +94,13 @@ ActiveRecord::Schema.define(version: 2018_10_31_122414) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.float "subtotal"
-    t.float "total"
-    t.string "shipping"
+
+    t.decimal "subtotal", precision: 12, scale: 3
+    t.decimal "tax", precision: 12, scale: 3
+    t.decimal "shipping", precision: 12, scale: 3
+    t.decimal "total", precision: 12, scale: 3
+    t.bigint "order_status_id"
+
     t.datetime "date_of_order"
     t.datetime "date_of_shippment"
     t.string "company_name"
@@ -113,8 +119,6 @@ ActiveRecord::Schema.define(version: 2018_10_31_122414) do
     t.string "customer_email"
     t.string "vat_number"
     t.string "special_request"
-    t.string "pickup_delivery"
-    t.string "customer_phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
