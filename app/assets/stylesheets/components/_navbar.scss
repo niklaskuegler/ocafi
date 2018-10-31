@@ -53,6 +53,13 @@
   color: #616668;
   font-size: 14px;
 }
+
+.navbar-wagon-cart-link {
+  color: Orange;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .navbar-wagon-link:hover {
   color: $white;
   text-decoration: none;
@@ -125,10 +132,19 @@
 }
 
 .vertical-align-link-a {
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 26px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.vertical-align-link-a-no-padding-right {
+  padding-right: 8px;
+}
+
+.vertical-align-cart-svg {
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .navbar-a {
