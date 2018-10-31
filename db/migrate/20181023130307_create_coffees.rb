@@ -5,7 +5,7 @@ class CreateCoffees < ActiveRecord::Migration[5.2]
       t.string :process
       t.string :certification
       t.string :year
-      t.string :price
+      t.float :price
       t.string :sku
       t.references :farmer, foreign_key: true
       t.float :price

@@ -20,9 +20,12 @@ Coffee.delete_all
 
 puts "Everything should be deleted:  #{Coffee.all.length} Coffees "
 
-Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Catuai", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
-Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Amarello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
-Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Vermello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
+#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Catuai", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
+#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Amarello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
+#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Vermello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
+Coffee.create! id: 1, name: "Banana", price: 0.49, active: true, farmer_id: 1
+Coffee.create! id: 2, name: "Apple", price: 0.29, active: true, farmer_id: 1
+Coffee.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true, farmer_id: 1
 
 puts "Everything should be created:  #{Coffee.all.length} Coffees "
 
@@ -32,7 +35,7 @@ OrderStatus.create! id: 2, name: "Placed"
 OrderStatus.create! id: 3, name: "Shipped"
 OrderStatus.create! id: 4, name: "Cancelled"
 
-puts "Everything should be created: #{OrderStatus.all.length} OrderStatuses"
+puts "Everything should be created: #{OrderStatus.all.length} OrderStatuses - It might work"
 
 
 #Farmer.create(
