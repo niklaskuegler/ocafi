@@ -1,7 +1,7 @@
 class CreateOrders < ActiveRecord::Migration[5.2]
   def change
     create_table :orders do |t|
-      t.references :order_status, foreign_key: true
+      #t.references :order_status, foreign_key: true
       t.float :subtotal
       t.float :total
       t.string :shipping

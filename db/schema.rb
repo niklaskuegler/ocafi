@@ -90,7 +90,6 @@ ActiveRecord::Schema.define(version: 2018_10_30_164002) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.bigint "order_status_id"
     t.float "subtotal"
     t.float "total"
     t.string "shipping"
@@ -116,7 +115,6 @@ ActiveRecord::Schema.define(version: 2018_10_30_164002) do
     t.string "customer_phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["order_status_id"], name: "index_orders_on_order_status_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -147,5 +145,4 @@ ActiveRecord::Schema.define(version: 2018_10_30_164002) do
   add_foreign_key "farmers", "users"
   add_foreign_key "order_items", "coffees"
   add_foreign_key "order_items", "orders"
-  add_foreign_key "orders", "order_statuses"
 end

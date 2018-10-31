@@ -1,8 +1,8 @@
 class Order < ApplicationRecord
-  belongs_to :order_status
+  #belongs_to :order_status
   has_many :order_items
   #before_validation :set_order_status, on: :create
-  before_create :setorderstatus
+  #before_create :set_order_status
   before_save :update_subtotal
 
   def subtotal
@@ -11,9 +11,9 @@ class Order < ApplicationRecord
 
   private
 
-  def set_order_status
-    self.order_status_id = 1
-  end
+  #def set_order_status
+  #  self.order_status_id = 1
+  #end
 
   def update_subtotal
     self[:subtotal] = subtotal
