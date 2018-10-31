@@ -1,5 +1,51 @@
-<div class="well">
 
+<div class="coffee-shop-container">
+  <div class="row">
+    <div class="col-xs-12 coffee-index-container">
+      <div class="coffee-index-section">
+        <h5>Facts</h5>
+        <p class="facts-p-margins">Farm: <%= coffee.name %></p>
+        <p class="facts-p-margins">Origin:</p>
+        <p class="facts-p-margins">Crop Year:</p>
+        <p class="facts-p-margins">Grade:</p>
+        <p class="facts-p-margins">Variety:</p>
+        <p class="facts-p-margins">Process type:</p>
+        <p class="facts-p-margins">Packaging:</p>
+        <p class="facts-p-margins">Screensize:</p>
+        <p class="facts-p-margins">Cup-Score:</p>
+      </div>
+      <div class="coffee-index-section">
+        <h5>Flavor</h5>
+        <p>Coffee with good sweetness, velvety body and delicate acidity.</p>
+        <p>Caramell and Vanilla notes.</p>
+        <p>Medium Body.</p>
+      </div>
+      <div class="coffee-index-section">
+        <%= form_for @order_item, remote: true do |f| %>
+          <h5>Pricing</h5>
+          <span class="pricing-span-style">1+ Bags:</span> <span>5 Euros</span>
+          <br>
+          <span class="pricing-span-style">5+ Bags:</span> <span>5 Euros</span>
+          <br>
+
+          <span><%= number_to_currency coffee.price %></span>
+          <div class="input-group">
+            <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+            <div class="input-group-btn">
+              <%= f.hidden_field :coffee_id, value: coffee.id %>
+              <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!--
   <div class="row">
     <div class="col-xs-8">
       <h4><%= coffee.name %></small></h4>
@@ -19,4 +65,4 @@
     </div>
 
   </div>
-</div>
+-->

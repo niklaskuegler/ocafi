@@ -101,9 +101,14 @@
 
         </div>
       </div>
-      <div class="link-container vertical-align-link ">
+      <div class="link-container">
         <div class="navbar-a">
-          <%= link_to "#{current_order.order_items.size} Items in Cart ( #{number_to_currency current_order.subtotal} )", cart_path, class: "btn btn-link" %>
+          <div class="cart-styling">
+            <%= link_to "#{current_order.order_items.size} Items", cart_path, class: "navbar-wagon-item navbar-wagon-cart-link vertical-align-link-a vertical-align-link-a-no-padding-right" %>
+            <div class="cart-icon vertical-align-cart-svg">
+              <%= render "/carts/cart_svg" %>
+            </div>
+          </div>
         </div>
       </div>
       <% else %>
