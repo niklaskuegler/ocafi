@@ -96,6 +96,24 @@ ActiveRecord::Schema.define(version: 2018_10_31_144955) do
     t.decimal "shipping", precision: 12, scale: 3
     t.decimal "total", precision: 12, scale: 3
     t.bigint "order_status_id"
+    t.datetime "date_of_order"
+    t.datetime "date_of_shippment"
+    t.string "company_name"
+    t.string "customer_first_name"
+    t.string "customer_last_name"
+    t.string "customer_billing_address"
+    t.string "customer_billing_postcode"
+    t.string "customer_billing_city"
+    t.string "customer_billing_state"
+    t.string "customer_billing_country"
+    t.string "customer_shipping_address"
+    t.string "customer_shipping_postcode"
+    t.string "customer_shipping_city"
+    t.string "customer_shipping_state"
+    t.string "customer_shipping_country"
+    t.string "customer_email"
+    t.string "vat_number"
+    t.string "special_request"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["order_status_id"], name: "index_orders_on_order_status_id"
