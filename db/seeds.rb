@@ -5,10 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 Coffee.delete_all
 
 Farmer.delete_all
-
 
 puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
 
