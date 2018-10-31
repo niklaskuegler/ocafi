@@ -4,10 +4,6 @@ class Order < ApplicationRecord
   before_validation :set_order_status, on: :create
   before_save :update_subtotal
 
-  #def subtotal
-  #  order_items.collect { |oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0 }.sum
-  #end
-
   def subtotal
     order_items.collect { |oi| oi.valid? ? (oi.quantity.to_i * oi.unit_price.to_f) : 0 }.sum
   end

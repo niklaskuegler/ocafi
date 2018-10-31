@@ -29,11 +29,11 @@ Coffee.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true,
 
 puts "Everything should be created:  #{Coffee.all.length} Coffees "
 
-#OrderStatus.create! id: 1, name: "In Progress"
-#OrderStatus.create! id: 2, name: "Placed"
-#OrderStatus.create! id: 3, name: "Shipped"
-#OrderStatus.create! id: 4, name: "Cancelled"
-
+OrderStatus.delete_all
+OrderStatus.create! id: 1, name: "In Progress"
+OrderStatus.create! id: 2, name: "Placed"
+OrderStatus.create! id: 3, name: "Shipped"
+OrderStatus.create! id: 4, name: "Cancelled"
 
 puts "Everything should be created: #{OrderStatus.all.length} OrderStatuses - It might work"
 
