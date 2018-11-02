@@ -5,20 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
 Coffee.delete_all
 
 Farmer.delete_all
 
-puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
+OrderItem.destroy_all
 
-Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo"
+Order.destroy_all
+
+puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
 
 puts "Everything should be created:  #{Farmer.all.length} Farmers "
 
-Coffee.delete_all
-
-puts "Everything should be deleted:  #{Coffee.all.length} Coffees "
+Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo"
 
 #Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Catuai", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
 #Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Amarello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
@@ -29,7 +28,7 @@ Coffee.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true,
 
 puts "Everything should be created:  #{Coffee.all.length} Coffees "
 
-OrderStatus.delete_all
+OrderStatus.destroy_all
 OrderStatus.create! id: 1, name: "In Progress"
 OrderStatus.create! id: 2, name: "Placed"
 OrderStatus.create! id: 3, name: "Shipped"

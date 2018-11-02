@@ -11,5 +11,5 @@ class Farmer < ApplicationRecord
   mount_uploader :farm_landscape9, PhotoUploader
   mount_uploader :farm_landscape10, PhotoUploader
 
-  has_many :coffees
+  has_many :coffees, dependent: :destroy
 end
