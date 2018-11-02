@@ -30,11 +30,9 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
     <%= yield %>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
-
     <%= javascript_pack_tag 'application' %>
     <!-- LiveCall -->
     <script async src="https://assets.livecall.io/accounts/5924/widget.js"></script>

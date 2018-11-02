@@ -1,2 +1,3 @@
-$(".cart-text").html("<%= escape_javascript(render 'layouts/cart_text') %>")
-$(".shopping-cart").html("<%= escape_javascript(render 'carts/shopping_cart') %>")
+var order_itemToRemove = document.querySelector("[data-order_item-id='<%= @order_item.id %>']")
+
+order_itemToRemove.remove();
