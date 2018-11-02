@@ -4,7 +4,7 @@ class OrderItem < ApplicationRecord
 
   validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
   validate :coffee_present
-  validate :order, presence: { message: "is not a valid order" }
+  validates :order, presence: { message: "is not a valid order" }
 
   before_save :finalize
 
