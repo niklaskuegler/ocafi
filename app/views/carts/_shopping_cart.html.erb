@@ -13,8 +13,20 @@
   </p>
 <% else %>
   <% @order_items.each do |order_item| %>
-    <%= render 'carts/cart_row', coffee: order_item.coffee, order_item: order_item, show_total: true %>
   <% end %>
+  <ul>
+    <% @order_items.each do |order_item| %>
+      <li data-order_item-id="<%= order_item.id %>">
+      <p><%= order_item.coffee.variety %></p>
+      <%= link_to "Delete", order_item, method: :delete, remote: true %>
+
+      <!-- add code for update here -->
+      </li>
+    <% end %>
+  </ul>
+
 <% end %>
+
+
 
 
