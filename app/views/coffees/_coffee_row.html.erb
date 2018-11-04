@@ -31,9 +31,11 @@
           <span><%= number_to_currency coffee.price %></span>
           <div class="input-group">
             <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
-            <div class="input-group-btn">
-              <%= f.hidden_field :coffee_id, value: coffee.id %>
-              <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+            <div onclick="window.location.href = '/coffees';">...
+              <div class="input-group-btn">
+                <%= f.hidden_field :coffee_id, value: coffee.id %>
+                <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+              </div>
             </div>
           </div>
 

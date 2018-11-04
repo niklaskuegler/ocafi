@@ -2,8 +2,12 @@ class OrderItemsController < ApplicationController
   def create
     @order = current_order
     @order_item = @order.order_items.new(order_item_params)
-    @order.save
-    session[:order_id] = @order.id
+    if @order.save
+      redirect_to cart_path
+      session[:order_id] = @order.id
+    else
+      render '/coffees'
+    end
   end
 
   def update
