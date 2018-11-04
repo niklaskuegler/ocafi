@@ -18,6 +18,7 @@
     <% @order_items.each do |order_item| %>
       <li data-order_item-id="<%= order_item.id %>">
       <p><%= order_item.coffee.variety %></p>
+      <p><%= order_item.quantity %></p>
       <%= link_to "Delete", order_item, method: :delete, remote: true %>
 
       <!-- add code for update here -->

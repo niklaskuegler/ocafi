@@ -21,7 +21,7 @@
         <p>Medium Body.</p>
       </div>
       <div class="coffee-index-section">
-        <%= form_for @order_item, remote: true do |f| %>
+        <%= form_for @order_item do |f| %>
           <h5>Pricing</h5>
           <span class="pricing-span-style">1+ Bags:</span> <span>5 Euros</span>
           <br>
@@ -31,10 +31,10 @@
           <span><%= number_to_currency coffee.price %></span>
           <div class="input-group">
             <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
-            <div class="input-group-btn">
-              <%= f.hidden_field :coffee_id, value: coffee.id %>
-              <%= f.submit "Add to Cart", class: "btn btn-primary" %>
-            </div>
+              <div class="input-group-btn">
+                <%= f.hidden_field :coffee_id, value: coffee.id %>
+                <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+              </div>
           </div>
 
         <% end %>
