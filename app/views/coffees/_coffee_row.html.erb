@@ -23,7 +23,7 @@
           <div class="row">
             <div class="col-lg-6">
               <h6>About the Farm</h6>
-              <ul>
+              <ul class="top">
                 <li>
                   <p class="technical-info-popup">Farm:</p><p><%= coffee.farmer.farm_name %></p>
                 </li>
@@ -64,15 +64,35 @@
             </div>
             <div class="col-lg-6">
               <h6>Flavor Profile</h6>
-              <ul>
+              <ul class="top">
                 <li>
                   <p class="technical-info-popup">Notes:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Description:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
+                  <p class="technical-info-popup">Description:</p>
+                  <p class="cup_description"><%= coffee.cup_description %></p>
                 </li>
-
               </ul>
+              <h6>Price & Purchase</h6>
+              <ul>
+                <li>
+                  <p class="technical-info-popup">1+ Bags:</p><p><%= coffee.price %> Euro</p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">5+ Bags:</p><p><%= coffee.price2 %> Euro</p>
+                </li>
+              </ul>
+
+                <%= form_for @order_item do |f| %>
+                  <div class="input-group">
+                    <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+                      <div class="input-group-btn">
+                        <%= f.hidden_field :coffee_id, value: coffee.id %>
+                        <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+                      </div>
+                  </div>
+
+                <% end %>
             </div>
           </div>
         </div>
