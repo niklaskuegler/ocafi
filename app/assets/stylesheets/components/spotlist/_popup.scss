@@ -2,26 +2,16 @@
 
   z-index: 2;
   height: 100%;
+  word-wrap: break-word;
 
   .center-heading {
     font-size: 30px;
     font-weight: 500;
     display: flex;
     justify-content: center;
+    word-wrap: break-word;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    height: 100vh;
-  }
-
-  h1 {
-    text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 80px 0;
-  }
 
   .box {
     width: 100%;
@@ -40,6 +30,7 @@
     background-color: orange;
     text-decoration: none;
     justify-content: space-around;
+    word-wrap: break-word;
   }
 
 
@@ -59,6 +50,7 @@
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+    word-wrap: break-word;
 
   }
   .overlay:target {
@@ -69,32 +61,54 @@
   }
 
   .popup {
+    height: 610px;
+    margin-bottom: 70px;
     margin: 70px auto;
     padding: 20px;
     background: white ;
-    border-radius: 5px;
     border-color:black;
-    width: 60%;
+    width: 50%;
     position: relative;
     transition: all 5s ease-in-out;
     color: $gray;
     font-size:18px;
     border-bottom:solid 1px black;
+    word-wrap: break-word;
+
+     @media (max-width: 750px) {
+      width: 70%;
+    }
+
+    @media (max-width: 440px) {
+      width: 90%;
+    }
 
   .center-heading{
     color:black;
     font-size:bold;
     border-bottom:solid 1px black;
+    word-wrap: break-word;
   }
-
-
-
 
   span{
    top:10px;
    color:black;
    border-bottom:solid 1px black;
    font-size:bold;
+   word-wrap: break-word;
+  }
+
+  ul {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  li {
+    display: flex;
+  }
+
+  .technical-info-popup {
+    width: 100px;
   }
 
   }
@@ -103,24 +117,48 @@
    margin-top: 10px;
    color: $gray;
    font-family: Tahoma, Arial, sans-serif;
+   word-wrap: break-word;
 
   }
 
   .popup .close {
+    padding: 0;
     position: absolute;
-    top: 9px;
-    right: 30px;
+    top: 8px;
+    right: 20px;
     transition: all 600ms;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     text-decoration: none;
     color: $gray;
+    word-wrap: break-word;
   }
+
+  .popup .close a {
+    background-color: white;
+  }
+
   .popup .close:hover {
     color: $gray;
   }
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
 }
+
+.popup-container-country #popup1 .popup .popup-farm-description {
+  color: black;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-y: none;
+  overflow-x: none;
+  word-break:break-all;
+}
+
+.content-farm {
+  White-space: initial;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+
+
+

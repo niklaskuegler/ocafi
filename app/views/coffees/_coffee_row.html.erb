@@ -14,10 +14,65 @@
       </div>
       <div id="popup1" class="overlay">
         <div class="popup">
-          <span class="center-heading">Which countries do you wish to exclude?</span>
-          <a class="close" href="#modal-anchor">&times;</a>
-          <div class="content">
-            <div class="radio-container" style="color: white; font-weight: 500px; font-size: 20px; font-border: black;">
+          <span class="center-heading">About this Coffee</span>
+          <a class="close" href="/coffees" style="background-color: white;">&times;</a>
+          <div class="content-farm">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsa quibusdam recusandae. Vitae odio non eos voluptatibus cum pariatur, asperiores iure eum deleniti quaerat sequi cumque delectus aliquid maxime eius natus dolores accusantium deserunt. Laboriosam natus quasi consectetur distinctio placeat quibusdam, molestias numquam in voluptates esse? Sapiente animi minima nulla. <a href="farmers/<%= coffee.farmer.id %>">Learn more...</a>
+              </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h6>About the Farm</h6>
+              <ul>
+                <li>
+                  <p class="technical-info-popup">Farm:</p><p><%= coffee.farmer.farm_name %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Farmer:</p><p><%= coffee.farmer.first_name %> <%= coffee.farmer.last_name %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Origin:</p><p><%= coffee.farmer.origin %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Region:</p><p><%= coffee.farmer.region %></p>
+                </li>
+              </ul>
+              <h6>About the Coffee</h6>
+              <ul>
+                <li>
+                  <p class="technical-info-popup">Variety:</p><p><%= coffee.variety %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Process:</p><p><%= coffee.process %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Certifications:</p><p><%= coffee.certification%></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Crop Year:</p><p><%= coffee.year %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Bag size:</p><p><%= coffee.packaging %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Cup score:</p><p><%= coffee.score %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Cup score:</p><p><%= coffee.screensize %></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h6>Flavor Profile</h6>
+              <ul>
+                <li>
+                  <p class="technical-info-popup">Notes:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
+                </li>
+                <li>
+                  <p class="technical-info-popup">Description:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
+                </li>
+
+              </ul>
             </div>
           </div>
         </div>

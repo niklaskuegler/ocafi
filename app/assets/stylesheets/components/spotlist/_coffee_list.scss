@@ -5,6 +5,8 @@
   overflow-x: scroll;
   overflow-y: visible;
   margin-bottom: 10%;
+  word-wrap: break-word;
+
 }
 
 .spotlist {
@@ -14,6 +16,8 @@
   border-collapse: separate;
   border-spacing: 0;
   font-size: 14px;
+  word-wrap: break-word;
+
 }
 
 table {
@@ -22,6 +26,8 @@ table {
   white-space: nowrap;
   border-collapse:separate;
   border-top: 3px solid grey;
+  word-wrap: break-word;
+
 }
 
 
@@ -32,6 +38,8 @@ table {
   padding-bottom: 5px;
   padding-left: 5px;
   background-color: $beige;
+  word-wrap: break-word;
+
 
 }
 
@@ -41,16 +49,21 @@ table {
   padding-left: 5px;
   background-color: white;
   border-bottom: solid 0.5px $beige;
+  word-wrap: break-word;
+
 
 }
 
 .th-last-right {
   padding-right: 270px;
+  word-wrap: break-word;
 }
 
 tr {
   background-color: $beige;
   height: 50px;
+  word-wrap: break-word;
+
 }
 
 .th-fixed {
@@ -61,12 +74,16 @@ tr {
   background-color: $beige;
   border-left: solid 0.5px;
   height: 50px;
+  word-wrap: break-word;
+
 }
 
 .fixed-col {
   position:absolute;
   right: 10%;
   top:auto;
+  word-wrap: break-word;
+
 }
 
 .td-fixed {
@@ -77,10 +94,14 @@ tr {
   border-left: solid 0.5px;
   height: 50px;
   border-bottom: solid 0.5px $beige;
+  word-wrap: break-word;
+
 
 }
 
 .fixed-td-col {
   position: absolute;
   right: 10%;
+  word-wrap: break-word;
+
 }
