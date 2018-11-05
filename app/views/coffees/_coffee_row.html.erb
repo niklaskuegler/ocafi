@@ -1,15 +1,28 @@
 <tr>
-  <td><%= coffee.farmer.farm_name %></td>
-  <td><%= coffee.bags %></td>
-  <td>Spot</td>
-  <td><%= coffee.process %></td>
-  <td><%= coffee.year %></td>
-  <td><%= coffee.score %></td>
-  <td><%= coffee.price %></td>
-  <td><%= coffee.price2 %></td>
-  <td>
-    <div>
-      Order
+  <td class="td-basic"><%= coffee.farmer.farm_name %></td>
+  <td class="td-basic"><%= coffee.bags %></td>
+  <td class="td-basic">Spot</td>
+  <td class="td-basic"><%= coffee.process %></td>
+  <td class="td-basic"><%= coffee.year %></td>
+  <td class="td-basic"><%= coffee.score %></td>
+  <td class="td-basic"><%= coffee.price %></td>
+  <td class="td-basic th-last-right"><%= coffee.price2 %></td>
+  <td class="no-padding-button td-fixed fixed-td-col">
+    <div class="popup-container-country">
+      <div class="box">
+        <a class="button" href="#popup1">Order</a>
+      </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <span class="center-heading">Which countries do you wish to exclude?</span>
+          <a class="close" href="#modal-anchor">&times;</a>
+          <div class="content">
+            <div class="radio-container" style="color: white; font-weight: 500px; font-size: 20px; font-border: black;">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </td>
 </tr>
+
