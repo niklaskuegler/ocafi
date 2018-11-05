@@ -1,11 +1,12 @@
-<h3 class="text-center">Current Spotlist of Coffees</h3>
-
+<%= render 'navbar_coffee' %>
 
 <div class="spotlist">
   <% @coffees.each do |coffee| %>
     <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
   <% end %>
 </div>
+
+<%= render 'shared/follow_us_footer' %>
 
 <!--<% @coffees.each do |coffee| %>
   <p><%= coffee.bags %></p>
