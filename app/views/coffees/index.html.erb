@@ -1,11 +1,29 @@
-<h3 class="text-center">Current Spotlist of Coffees</h3>
+<%= render 'navbar_coffee' %>
 
-
-<div class="spotlist">
-  <% @coffees.each do |coffee| %>
-    <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
-  <% end %>
+<div class="spotlist-container">
+  <table class="spotlist">
+    <thead>
+      <tr>
+        <th class="th-basic">Farm</th>
+        <th class="th-basic">Bags</th>
+        <th class="th-basic">Availability</th>
+        <th class="th-basic">Process</th>
+        <th class="th-basic">Crop-Year</th>
+        <th class="th-basic">Cupping</th>
+        <th class="th-basic">Price 1+ bags</th>
+        <th class="th-basic">Price 5+ bags</th>
+        <th class="th-fixed fixed-col">Inquire</th>
+      </tr>
+    </thead>
+    <% @coffees.each do |coffee| %>
+      <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
+    <% end %>
+  </table>
 </div>
+
+<%= render 'shared/follow_us_footer' %>
+
+
 
 <!--<% @coffees.each do |coffee| %>
   <p><%= coffee.bags %></p>

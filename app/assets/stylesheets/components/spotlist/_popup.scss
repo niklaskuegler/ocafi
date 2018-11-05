@@ -1,0 +1,175 @@
+.popup-container-country {
+
+  z-index: 2;
+  height: 100%;
+  word-wrap: break-word;
+
+  .center-heading {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+  }
+
+
+  .box {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .button{
+    padding-left: 5px;
+    padding-right: 70px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: orange;
+    text-decoration: none;
+    justify-content: space-around;
+    word-wrap: break-word;
+  }
+
+
+
+  .button:hover {
+    background: $orange;
+    color: white;
+    }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    word-wrap: break-word;
+
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9;
+
+  }
+
+  .popup {
+    height: 640px;
+    margin-bottom: 70px;
+    margin: 70px auto;
+    padding: 20px;
+    background: white ;
+    border-color:black;
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    color: $gray;
+    font-size:18px;
+    border-bottom:solid 1px black;
+    word-wrap: break-word;
+
+     @media (max-width: 750px) {
+      width: 70%;
+    }
+
+    @media (max-width: 440px) {
+      width: 90%;
+    }
+
+  .center-heading{
+    color:black;
+    font-size:bold;
+    border-bottom:solid 1px black;
+    word-wrap: break-word;
+  }
+
+  span{
+   top:10px;
+   color:black;
+   border-bottom:solid 1px black;
+   font-size:bold;
+   word-wrap: break-word;
+  }
+
+  ul {
+    padding-left: 0;
+    font-size: 14px;
+
+
+  }
+
+  .top {
+      height: 150px;
+    }
+
+  li {
+    display: flex;
+
+    .cup_description {
+      White-space: initial;
+      width: 200px;
+    }
+  }
+
+  .technical-info-popup {
+    width: 100px;
+  }
+
+  }
+
+  .span h2 {
+   margin-top: 10px;
+   color: $gray;
+   font-family: Tahoma, Arial, sans-serif;
+   word-wrap: break-word;
+
+  }
+
+  .popup .close {
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    transition: all 600ms;
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $gray;
+    word-wrap: break-word;
+  }
+
+  .popup .close a {
+    background-color: white;
+  }
+
+  .popup .close:hover {
+    color: $gray;
+  }
+}
+
+.popup-container-country #popup1 .popup .popup-farm-description {
+  color: black;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-y: none;
+  overflow-x: none;
+  word-break:break-all;
+}
+
+.content-farm {
+  White-space: initial;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+
+
+

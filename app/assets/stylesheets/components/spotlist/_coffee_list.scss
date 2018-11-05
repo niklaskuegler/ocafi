@@ -1,0 +1,107 @@
+.spotlist-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-bottom: 10%;
+  word-wrap: break-word;
+
+}
+
+.spotlist {
+  margin-right: 200px;
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  word-wrap: break-word;
+
+}
+
+table {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  border-collapse:separate;
+  border-top: 3px solid grey;
+  word-wrap: break-word;
+
+}
+
+
+.th-basic {
+  min-width: 150px;
+  max-width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  background-color: $beige;
+  word-wrap: break-word;
+
+
+}
+
+.td-basic {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  background-color: white;
+  border-bottom: solid 0.5px $beige;
+  word-wrap: break-word;
+
+
+}
+
+.th-last-right {
+  padding-right: 270px;
+  word-wrap: break-word;
+}
+
+tr {
+  background-color: $beige;
+  height: 50px;
+  word-wrap: break-word;
+
+}
+
+.th-fixed {
+  min-width: 150px;
+  max-width: 200px;
+  padding-top: 15px;
+  padding-left: 5px;
+  background-color: $beige;
+  border-left: solid 0.5px;
+  height: 50px;
+  word-wrap: break-word;
+
+}
+
+.fixed-col {
+  position:absolute;
+  right: 10%;
+  top:auto;
+  word-wrap: break-word;
+
+}
+
+.td-fixed {
+  min-width: 150px;
+  padding-top: 15px;
+  padding-left: 5px;
+  background-color: #979797;
+  border-left: solid 0.5px;
+  height: 50px;
+  border-bottom: solid 0.5px $beige;
+  word-wrap: break-word;
+
+
+}
+
+.fixed-td-col {
+  position: absolute;
+  right: 10%;
+  word-wrap: break-word;
+
+}

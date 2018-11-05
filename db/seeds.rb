@@ -19,13 +19,17 @@ Order.destroy_all
 
 puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
 
+Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo", origin: "San Jose do Rio Pardo", region: "Mogiana"
+
 puts "Everything should be created:  #{Farmer.all.length} Farmers "
 
-Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo"
 
-#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Catuai", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
-#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Amarello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
-#Coffee.create! bags: 40, process: "Natural", certification: "UTZ", year: "2018", price: "500", sku: "LPO-1001", farmer_id: 1, packaging: "60 KG", batch: "4572", score: "85", variety: "Vermello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", active: true
+Coffee.create! name: "Alianca", bags: 40, process: "Natural", certification: "UTZ", year: "2018", sku: "LPO-1001", farmer_id: 1, price: 6.30, price2: 5.90, packaging: "60 KG", batch: "4572", score: "85", variety: "Catuai", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", cup_description: "Very aromatic coffee. Fruity, citrus and tropical
+notes. Light body and vibrant acidity. Delicate, clean and complex sweetness.", active: true
+Coffee.create! name: "Santa Alina", bags: 40, process: "Natural", certification: "UTZ", year: "2018", sku: "LPO-1002", farmer_id: 1, price: 6.30, price2: 5.90, packaging: "60 KG", batch: "4572", score: "84", variety: "Amarello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", cup_description: "Very aromatic coffee. Fruity, citrus and tropical
+notes. Light body and vibrant acidity. Delicate, clean and complex sweetness.", active: true
+Coffee.create! name: "Matão", bags: 40, process: "Natural", certification: "UTZ", year: "2018", sku: "LPO-1003", farmer_id: 1, price: 6.30, price2: 5.90, packaging: "60 KG", batch: "4572", score: "86", variety: "Vermello", screensize: "16+", flavor1: "Chocolate", flavor2: "Vanilla", flavor3: "Caramell", cup_description: "Very aromatic coffee. Fruity, citrus and tropical
+notes. Light body and vibrant acidity. Delicate, clean and complex sweetness.", active: true
 #Coffee.create! id: 1, name: "Banana", price: 0.49, active: true, farmer_id: 1
 #Coffee.create! id: 2, name: "Apple", price: 0.29, active: true, farmer_id: 1
 #Coffee.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true, farmer_id: 1
