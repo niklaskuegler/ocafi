@@ -1,9 +1,22 @@
 <%= render 'navbar_coffee' %>
 
 <div class="spotlist">
-  <% @coffees.each do |coffee| %>
-    <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
-  <% end %>
+  <table id="customers">
+    <tr>
+      <th>Farm</th>
+      <th>Bags</th>
+      <th>Availability</th>
+      <th>Process</th>
+      <th>Crop-Year</th>
+      <th>Cupping</th>
+      <th>Price 1+ bags</th>
+      <th>Price 5+ bags</th>
+      <th>Inquire</th>
+    </tr>
+    <% @coffees.each do |coffee| %>
+      <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
+    <% end %>
+  </table>
 </div>
 
 <%= render 'shared/follow_us_footer' %>
