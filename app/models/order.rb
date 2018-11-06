@@ -9,7 +9,7 @@ class Order < ApplicationRecord
   end
 
   def bags
-
+    order_items.collect { |oi| oi.valid? ? (oi.quantity.to_i) : 0 }.sum
   end
 
   private
@@ -22,6 +22,6 @@ class Order < ApplicationRecord
   end
 
   def bags_quantity
-
+    self[:bags] = bags
   end
 end
