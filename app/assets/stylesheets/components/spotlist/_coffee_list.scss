@@ -18,6 +18,20 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
+
+  tr {
+  background-color: $beige;
+  height: 50px;
+  word-wrap: break-word;
+  }
+
+  table {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  border-collapse:separate;
+  word-wrap: break-word;
+  }
 }
 
 .spotlist {
@@ -28,18 +42,9 @@
   border-spacing: 0;
   font-size: 14px;
   word-wrap: break-word;
-
 }
 
-table {
-  width: 100%;
-  display: block;
-  white-space: nowrap;
-  border-collapse:separate;
-  border-top: 3px solid grey;
-  word-wrap: break-word;
 
-}
 
 .th-basic-first {
   min-width: 150px;
@@ -109,12 +114,7 @@ table {
   }
 }
 
-tr {
-  background-color: $beige;
-  height: 50px;
-  word-wrap: break-word;
 
-}
 
 .th-fixed {
   min-width: 150px;

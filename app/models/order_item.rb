@@ -12,7 +12,11 @@ class OrderItem < ApplicationRecord
     if persisted?
       self[:unit_price]
     else
-      coffee.price
+      if quantity < 5
+        coffee.price
+      else
+        coffee.price2
+      end
     end
   end
 

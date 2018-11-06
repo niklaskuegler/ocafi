@@ -12,24 +12,9 @@
     There are no items in your shopping cart.  Please <%= link_to "go back", coffees_path %> and add some items to your cart.
   </p>
 <% else %>
-  <% @order_items.each do |order_item| %>
-  <% end %>
-  <ul>
-    <% @order_items.each do |order_item| %>
-      <li data-order_item-id="<%= order_item.id %>">
-      <p><%= order_item.coffee.variety %></p>
-      <p><%= order_item.quantity %></p>
-      <%= link_to "Delete", order_item, method: :delete, onClick:"window.location.href=window.location.href" %>
-
-      <!-- add code for update here -->
-      </li>
-    <% end %>
-  </ul>
-
-
-
-
+  <%= render 'cart_order_items' %>
 <% end %>
+
 
 
 
