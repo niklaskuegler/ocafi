@@ -96,15 +96,12 @@
             </div>
           <% end %>
 
-
-
-
         </div>
       </div>
       <div class="link-container">
         <div class="navbar-a">
           <div class="cart-styling">
-            <%= link_to "#{current_order.order_items.size} bags", cart_path, class: "navbar-wagon-item navbar-wagon-cart-link vertical-align-link-a vertical-align-link-a-no-padding-right" %>
+            <%= link_to "#{current_order.bags} bags in", cart_path, class: "navbar-wagon-item navbar-wagon-cart-link vertical-align-link-a vertical-align-link-a-no-padding-right" %>
             <div class="cart-icon vertical-align-cart-svg">
               <%= render "/carts/cart_svg" %>
             </div>
