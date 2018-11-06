@@ -1,0 +1,58 @@
+.order_item_container {
+  width: 800px;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-bottom: 5%;
+
+  @media (max-width: 820px) {
+    width: 80%;
+  }
+
+  @media (max-width: 440px) {
+    width: 95%;
+  }
+
+  tr {
+    background-color: $beige;
+    height: 50px;
+  }
+
+  table {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    border-collapse: separate;
+  }
+}
+
+.order_items_table {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.order_items_th_basic {
+  width: 150px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  background-color: $beige;
+}
+
+.order_items_td_basic {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  background-color: white;
+  border-bottom: solid 0.5px $beige;
+}
+
+.order_items_td_last {
+  padding-right: 5px;
+}
+

@@ -1,0 +1,20 @@
+<div class="order_item_container">
+  <table class="order_items_table">
+    <thead>
+      <tr>
+        <th class="order_items_th_basic">Batch</th>
+        <th class="order_items_th_basic">Farm</th>
+        <th class="order_items_th_basic">Variety</th>
+        <th class="order_items_th_basic">Packaging</th>
+        <th class="order_items_th_basic">Bags</th>
+        <th class="order_items_th_basic">Unit Price</th>
+        <th>     </th>
+      </tr>
+    </thead>
+    <% @order_items.each do |order_item| %>
+      <%= render "order_items_row", order_item: order_item %>
+    <% end %>
+  </table>
+</div>
+
+

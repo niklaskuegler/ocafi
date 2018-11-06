@@ -1,0 +1,9 @@
+<tr>
+  <td class="order_items_td_basic"><%= order_item.coffee.batch %></td>
+  <td class="order_items_td_basic"><%= order_item.coffee.farmer.farm_name %></td>
+  <td class="order_items_td_basic"><%= order_item.coffee.variety %></td>
+  <td class="order_items_td_basic"><%= order_item.coffee.packaging %></td>
+  <td class="order_items_td_basic"><%= order_item.quantity %></td>
+  <td class="order_items_td_basic"><%= order_item.unit_price %> € /kg</td>
+  <td class="order_items_td_basic order_items_td_last"><%= link_to "Delete", order_item, method: :delete, onClick:"window.location.href=window.location.href" %></td>
+</tr>

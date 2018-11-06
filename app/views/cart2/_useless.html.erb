@@ -1,7 +1,13 @@
+ <%= form_for order_item, method: :update, remote: true do |f| %>
+    <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
+      <%= f.submit "Update Quantity", class: "btn btn-primary" %>
+      <p><%= order_item.total_price %></p>
+<% end %>
+
 
   <div class="row">
     <div class="col-xs-8">
-      <h4><%= coffee.variety %></h4>
+      <h4><%= order_item.coffee.variety %></h4>
     </div>
     <div class="col-xs-4">
 
@@ -10,7 +16,7 @@
         <div class="row">
           <div class="col-xs-4">
             <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
-            <%= f.hidden_field :coffee_id, value: coffee.id %>
+            <%= f.hidden_field :coffee_id, value: order_item.coffee.id %>
           </div>
           <div class="col-xs-8 text-right">
             <div class="btn-group">
@@ -28,3 +34,16 @@
   </div>
 
 
+<ul>
+  <% @order_items.each do |order_item| %>
+    <li data-order_item-id="<%= order_item.id %>">
+      <p><%= order_item.coffee.variety %></p>
+      <p><%= order_item.quantity %></p>
+      <p><%= number_to_currency order_item.unit_price %></p>
+      <%= link_to "Delete", order_item, method: :delete, onClick:"window.location.href=window.location.href" %>
+
+      <!-- add code for update here -->
+      </li>
+
+  <% end %>
+</ul>
