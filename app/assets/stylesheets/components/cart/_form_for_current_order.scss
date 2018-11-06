@@ -1,0 +1,16 @@
+.form_for_current_order_container {
+  width: 800px;
+  margin: auto;
+  margin-bottom: 5%;
+  background-color: gray;
+  color: white;
+
+  @media (max-width: 820px) {
+    width: 80%;
+  }
+
+  @media (max-width: 440px) {
+    width: 95%;
+  }
+
+}
