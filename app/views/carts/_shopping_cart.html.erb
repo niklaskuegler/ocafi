@@ -12,7 +12,16 @@
     There are no items in your shopping cart.  Please <%= link_to "go back", coffees_path %> and add some items to your cart.
   </p>
 <% else %>
-  <%= render 'cart_order_items' %>
+  <% if @order_items.any? { |u| u[:quantity] > 0 } %>
+    <%= render 'cart_order_items' %>
+  <% end %>
+
+  <% if @order_items.any? { |h| h[:sample] == true } %>
+    <%= render 'cart_sample_items' %>
+  <% end %>
+
+  <%= render "form_for_current_order" %>
+
 <% end %>
 
 

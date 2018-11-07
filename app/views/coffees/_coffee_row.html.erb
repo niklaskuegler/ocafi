@@ -85,14 +85,24 @@
 
                 <%= form_for @order_item do |f| %>
                   <div class="input-group">
-                    <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+                    <div class="bag_amount">
+                      <%= f.number_field :quantity, value: 0, class: "number_field_bags", min: 0 %>
+                      <span>Bags to Cart</span>
+                    </div>
+                    <div class="sample_wanted">
+                      <%= f.check_box :sample, class: "regular-checkbox" %>
+                      <span>Sample wanted</span>
+                    </div>
+                    <div class="button-order-input-group">
                       <div class="input-group-btn">
                         <%= f.hidden_field :coffee_id, value: coffee.id %>
-                        <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+                        <%= f.submit "Add to Cart", class: "btn btn-primary button-order-input-padding" %>
                       </div>
+                    </div>
                   </div>
-
                 <% end %>
+
+
             </div>
           </div>
         </div>

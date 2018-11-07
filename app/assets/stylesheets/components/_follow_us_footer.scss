@@ -20,6 +20,8 @@
   height: 275px;
   text-align: left;
 
+
+
   p {
     margin: 0;
     font-size: 14px;
@@ -102,6 +104,13 @@
 .follow_us_section_newsletter {
   height: 275px;
   padding: 0;
+  @media (max-width: 750px) {
+    height: 170px;
+  }
+
+  @media (max-width: 440px) {
+    height: 150px;
+  }
 }
 
 .vertical-align-wrap-newsletter {
