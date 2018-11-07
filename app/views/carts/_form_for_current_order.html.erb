@@ -1,19 +1,20 @@
 <div class="form_for_current_order_container">
+  <span class="your-details-heading">Your details</span>
+  <%= form_for @order, url: cart_path do |f| %>
+    <div class="order-form">
+      <%= f.text_field :company_name, placeholder: "Company Name", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_first_name, placeholder: "First Name", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_last_name, placeholder: "Last Name", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_email, placeholder: "Email address", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_address, placeholder: "Address", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_postcode, placeholder: "Postcode", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_city, placeholder: "City", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_country, placeholder: "Country", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :vat_number, placeholder: "Vat Number", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :special_request, placeholder: "Special request", class: 'order-from-input order-input-width' %>
+      <%= f.submit "Place Order", class: 'btn btn-primary' %>
 
-<p><%= @order.company_name %></p>
-<p><%= @order.customer_first_name %></p>
-
-  <%= simple_form_for @order, url: cart_path do |f| %>
-    <%= f.input :company_name, class: "form-control" %>
-    <%= f.input :customer_first_name, class: "form-control" %>
-    <%= f.input :customer_last_name, class: "form-control" %>
-    <%= f.input :customer_billing_address, class: "form-control" %>
-    <%= f.input :customer_billing_postcode, class: "form-control" %>
-    <%= f.input :customer_billing_city, class: "form-control" %>
-    <%= f.input :customer_billing_state, class: "form-control" %>
-    <%= f.input :vat_number, class: "form-control" %>
-    <%= f.input :special_request, class: "form-control" %>
-    <%= f.submit "Edit your profile!", class: "btn-primary" %>
-  <% end %>
+    </div>
+    <% end %>
 
 </div>
