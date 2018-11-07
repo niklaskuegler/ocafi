@@ -38,7 +38,7 @@ class CoffeesController < ApplicationController
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
   #  params.require(:coffee).permit(:price, :farmer_id, :active, :name)
-    params.require(:coffee).permit(:bags, :process, :certification, :year, :price, :sku, :farmer_id, :packaging, :batch, :score, :variety, :screensize, :flavor1, :flavor2, :flavor3, :flavor1_image, :flavor2_image, :flavor3_image)
+    params.require(:coffee).permit(:bags, :process, :certification, :year, :price, :sku, :farmer_id, :packaging, :sample_packaging, :batch, :score, :variety, :screensize, :flavor1, :flavor2, :flavor3, :flavor1_image, :flavor2_image, :flavor3_image)
   end
 
   def set_coffee

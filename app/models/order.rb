@@ -24,4 +24,5 @@ class Order < ApplicationRecord
   def bags_quantity
     self[:bags] = bags
   end
+
 end

@@ -31,7 +31,6 @@ class OrderItemsController < ApplicationController
   def order_item_params
     params.require(:order_item).permit(:quantity, :coffee_id)
   end
-
 end
 
 

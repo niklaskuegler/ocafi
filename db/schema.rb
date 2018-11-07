@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_07_140208) do
+ActiveRecord::Schema.define(version: 2018_11_07_141107) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2018_11_07_140208) do
     t.string "name"
     t.float "price2"
     t.string "cup_description"
+    t.integer "sample_packaging"
     t.index ["farmer_id"], name: "index_coffees_on_farmer_id"
   end
 
@@ -82,6 +83,7 @@ ActiveRecord::Schema.define(version: 2018_11_07_140208) do
     t.float "total_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sample_quantity"
     t.index ["coffee_id"], name: "index_order_items_on_coffee_id"
     t.index ["order_id"], name: "index_order_items_on_order_id"
   end
