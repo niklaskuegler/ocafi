@@ -1,11 +1,19 @@
 <div class="form_for_current_order_container">
-<p><%= current_order.id %></p>
-<p><%= current_order.subtotal %></p>
-<p>_____________</p>
 
+<p><%= @order.company_name %></p>
+<p><%= @order.customer_first_name %></p>
 
-
-
-
+  <%= simple_form_for @order, url: cart_path do |f| %>
+    <%= f.input :company_name, class: "form-control" %>
+    <%= f.input :customer_first_name, class: "form-control" %>
+    <%= f.input :customer_last_name, class: "form-control" %>
+    <%= f.input :customer_billing_address, class: "form-control" %>
+    <%= f.input :customer_billing_postcode, class: "form-control" %>
+    <%= f.input :customer_billing_city, class: "form-control" %>
+    <%= f.input :customer_billing_state, class: "form-control" %>
+    <%= f.input :vat_number, class: "form-control" %>
+    <%= f.input :special_request, class: "form-control" %>
+    <%= f.submit "Edit your profile!", class: "btn-primary" %>
+  <% end %>
 
 </div>
