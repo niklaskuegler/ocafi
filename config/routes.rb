@@ -8,8 +8,10 @@ Rails.application.routes.draw do
 
   #get 'carts/show'
 
-  resource :cart, only: [:show]
+  resource :cart, only: [:show, :update, :edit]
   resources :order_items, only: [:create, :update, :destroy]
+
+  patch "/cart", to: "orders#update", as: "update_order"
 
   resources :farmers
 
