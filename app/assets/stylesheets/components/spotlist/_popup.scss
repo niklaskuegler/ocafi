@@ -97,7 +97,6 @@
   span{
    top:10px;
    color:black;
-   border-bottom:solid 1px black;
    font-size:bold;
    word-wrap: break-word;
   }
@@ -174,6 +173,80 @@
   padding-top: 5px;
 }
 
+.bag_amount {
+  display: flex;
 
+  span {
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 14px
+  }
+}
 
+.number_field_bags {
+  width: 55px;
+  border: gray 1px solid;
+  padding-left: 5px;
+  height: 40px;
+}
+
+.sample_wanted {
+  margin-top: 5px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 30px;
+
+  span {
+    line-height: 34px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+}
+
+.regular-checkbox {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  margin-top: 11px;
+  margin-left: 5px;
+
+}
+
+.regular-checkbox:active, .regular-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #99a1a7;
+}
+
+.button-order-input-group {
+  margin-top: 5px;
+}
+
+.button-order-input-padding {
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
