@@ -85,7 +85,9 @@
 
                 <%= form_for @order_item do |f| %>
                   <div class="input-group">
-                    <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+                    <%= f.number_field :quantity, value: 0, class: "form-control", min: 0 %>
+                    <%= f.label "Sample wanted" %>
+                    <%= f.check_box :sample %>
                       <div class="input-group-btn">
                         <%= f.hidden_field :coffee_id, value: coffee.id %>
                         <%= f.submit "Add to Cart", class: "btn btn-primary" %>

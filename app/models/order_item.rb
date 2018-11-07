@@ -2,7 +2,7 @@ class OrderItem < ApplicationRecord
   belongs_to :coffee
   belongs_to :order
 
-  validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
+  validates :quantity, presence: true
   validate :coffee_present
   validates :order, presence: { message: "is not a valid order" }
 

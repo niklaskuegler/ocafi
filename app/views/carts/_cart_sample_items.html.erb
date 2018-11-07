@@ -1,5 +1,5 @@
 <div class="order_item_container">
-  <span class="header_for_table">Spot-list order</span>
+  <span class="header_for_table">Sample order</span>
   <table class="order_items_table">
     <thead>
       <tr>
@@ -13,12 +13,10 @@
       </tr>
     </thead>
     <% @order_items.each do |order_item| %>
-      <% if order_item.quantity > 0 %>
-        <%= render "order_items_row", order_item: order_item %>
+      <% if order_item.sample == true %>
+        <%= render "cart_sample_items_row", order_item: order_item %>
       <% else %>
       <% end %>
     <% end %>
   </table>
 </div>
-
-
