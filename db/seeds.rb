@@ -19,7 +19,7 @@ Order.destroy_all
 
 puts "Everything should be deleted:  #{Coffee.all.length} Farmers "
 
-#Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo", origin: "San Jose do Rio Pardo", region: "Mogiana"
+Farmer.create! id:1, farm_name: "Fazenda Matao", first_name: "Luis", last_name: "Guardabaxo", origin: "San Jose do Rio Pardo", region: "Mogiana"
 
 puts "Everything should be created:  #{Farmer.all.length} Farmers "
 
