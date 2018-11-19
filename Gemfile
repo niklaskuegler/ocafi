@@ -16,15 +16,14 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem "geocoder"
 
+gem "letter_opener", group: :development
+
+gem "geocoder"
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
 gem "figaro"
 gem "pundit"
-
-gem "letter_opener", group: :development
-
 gem 'postmark-rails'
 
 group :development do
