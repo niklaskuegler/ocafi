@@ -20,17 +20,10 @@
 
 
   Coffees Ordered:
-  <% @order_items.each do |order_item| %>
-    Batch: <%= order_item.coffee.batch %>,
-    Farmer: <%= order_item.coffee.farmer.farm_name %>,
-    Variety: <%= order_item.coffee.variety %>,
-    Quantity: <%= order_item.quantity %>,
-    Unit Price: <%= order_item.unit_price %> € /kg
-  <% end %>
+  Batch: @order_item.first.coffee.batch
+  Quantity: @order_item.first.coffee.quantity
 
   Samples Ordered:
-  <% @order_items.each do |order_item| %>
-    Batch: <%= order_item.coffee.batch %>, Farmer: <%= order_item.coffee.farmer.farm_name %>, Variety: <%= order_item.coffee.variety %> <br>
-  <% end %>
+
 
 </p>
