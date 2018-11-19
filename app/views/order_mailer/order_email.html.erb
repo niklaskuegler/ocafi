@@ -1,7 +1,7 @@
 <p>
   Order Information <br>
 
-  Customer Information:
+  Customer Information: <br>
   Company name: <%= "#{@company_name}" %> <br>
   Customer first name: <%= "#{@customer_first_name}" %> <br>
   Customer last name: <%= "#{@customer_last_name}" %> <br>
@@ -9,7 +9,7 @@
   Customer Phone: <%= "#{@phone_number}" %> <br>
   VAT number: <%= "#{@vat_number}" %> <br>
 
-  Shipping Information:
+  Shipping Information: <br>
   Address: <%= "#{@customer_shipping_address}" %> <br>
   Postcode: <%= "#{@customer_shipping_postcode}" %> <br>
   City: <%= "#{@customer_shipping_city}" %> <br>
@@ -20,8 +20,8 @@
 
 
   Coffees Ordered:
-  Batch: @order_item.first.coffee.batch
-  Quantity: @order_item.first.coffee.quantity
+  Batch: <%= @order_item.first.coffee.batch %> <br>
+  Quantity: <%= @order_item.first.coffee.quantity %>
 
   Samples Ordered:
 
