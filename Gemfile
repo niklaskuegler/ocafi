@@ -20,10 +20,13 @@ gem "geocoder"
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'carrierwave', '~> 1.2'
-gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
 gem "figaro"
 gem "pundit"
+
+gem "letter_opener", group: :development
+
+gem 'postmark-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
