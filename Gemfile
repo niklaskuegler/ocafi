@@ -17,7 +17,6 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem "geocoder"
-gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
