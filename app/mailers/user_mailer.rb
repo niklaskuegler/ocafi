@@ -7,8 +7,8 @@ class UserMailer < ApplicationMailer
 
   def welcome(user)
     @user = user
+    @url = 'http://ocafi.de/users/sign_in'
 
     mail(to: @user.email, subject: "Welcome to Ocafi - Specialty Coffee")
-
   end
 end

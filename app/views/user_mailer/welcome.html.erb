@@ -1,7 +1,9 @@
-Hello <%= @user.username %>,
-
-nice to meet you, hope you enjoy our service!
-
-Best wishes,
-
-Your Ocafi Team
+<h1>Welcome to Ocafi - Green Coffee, <%= @user.username %></h1>
+<p>
+  You have successfully signed up to www.ocafi.de,
+  your username is: <%= @user.email %>.<br>
+</p>
+<p>
+  To login to the site, just follow this link: <%= @url %>.
+</p>
+<p>Thanks for joining and have a great day!</p>
