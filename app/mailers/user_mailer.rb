@@ -5,11 +5,10 @@ class UserMailer < ApplicationMailer
 
   # en.user_mailer.welcome.subject
 
-  def welcome_email
-    @user = params[:user]
-    @url = 'http://www.ocafi.de/users/sign_in'
+  def welcome(user)
+    @user = user
+    @url = 'http://ocafi.de/users/sign_in'
 
     mail(to: @user.email, subject: "Welcome to Ocafi - Specialty Coffee")
-
   end
 end
