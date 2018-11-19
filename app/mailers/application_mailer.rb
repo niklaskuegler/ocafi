@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'info@ocafi.de'
+  default to: 'info@ocafi.de'
   layout 'mailer'
 end
