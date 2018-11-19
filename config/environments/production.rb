@@ -84,7 +84,8 @@ Rails.application.configure do
 
     #Mailer
     config.action_mailer.delivery_method = :smtp
-    config.action_mailer.default_url_options = { host: 'www.ocafi.de' }
+    config.action_mailer.postmark_settings   = { api_key: ENV['POSTMARK_API_KEY'] }
+    config.action_mailer.default_url_options = { host: "www.ocafi.de" }
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
