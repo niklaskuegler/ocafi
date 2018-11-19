@@ -10,7 +10,7 @@ class User < ApplicationRecord
   private
 
   def send_welcome_email
-    UserMailer.sample_email(user)
+    UserMailer.welcome(self).deliver_now
   end
 
   # Include default devise modules. Others available are:
