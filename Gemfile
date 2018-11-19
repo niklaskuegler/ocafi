@@ -25,6 +25,7 @@ gem 'cloudinary'
 gem "figaro"
 gem "pundit"
 gem 'postmark-rails'
+gem 'mailgun-ruby'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
