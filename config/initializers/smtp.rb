@@ -1,9 +1,9 @@
 ActionMailer::Base.smtp_settings = {
-  address: 'smtp.ocaficoffee.com',
-  port: 25,
-  domain: 'heroku.com',
-  Username: ENV['POSTMARK_API_KEY'],
-  Password: ENV['POSTMARK_API_TOKEN'],
-  authentication: :CRAM_MD5,
+  address: 'smtp.mailgun.org',
+  port: 587,
+  domain: 'gmail.com',
+  Username: ENV['MAILGUN_USERNAME'],
+  Password: ENV['MAILGUN_PASSWORD'],
+  authentication: :login,
   enable_starttls_auto: true
 }
