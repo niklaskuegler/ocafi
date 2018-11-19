@@ -1,4 +1,36 @@
 <p>
-  You have recevied a message from the ocafis order page
-  <%= "#{@company_name}, #{@customer_email}" %>
+  Order Information <br>
+
+  Customer Information:
+  Company name: <%= "#{@company_name}" %> <br>
+  Customer first name: <%= "#{@customer_first_name}" %> <br>
+  Customer last name: <%= "#{@customer_last_name}" %> <br>
+  Customer email: <%= "#{@customer_email}" %> <br>
+  Customer Phone: <%= "#{@phone_number}" %> <br>
+  VAT number: <%= "#{@vat_number}" %> <br>
+
+  Shipping Information:
+  Address: <%= "#{@customer_shipping_address}" %> <br>
+  Postcode: <%= "#{@customer_shipping_postcode}" %> <br>
+  City: <%= "#{@customer_shipping_city}" %> <br>
+  Country: <%= "#{@customer_shipping_country}" %> <br>
+
+  Further information:
+  Special requests: <%= "#{@special_request}" %> <br>
+
+
+  Coffees Ordered:
+  <% @order_items.each do |order_item| %>
+    Batch: <%= order_item.coffee.batch %>,
+    Farmer: <%= order_item.coffee.farmer.farm_name %>,
+    Variety: <%= order_item.coffee.variety %>,
+    Quantity: <%= order_item.quantity %>,
+    Unit Price: <%= order_item.unit_price %> € /kg
+  <% end %>
+
+  Samples Ordered:
+  <% @order_items.each do |order_item| %>
+    Batch: <%= order_item.coffee.batch %>, Farmer: <%= order_item.coffee.farmer.farm_name %>, Variety: <%= order_item.coffee.variety %> <br>
+  <% end %>
+
 </p>
