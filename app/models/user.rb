@@ -1,14 +1,14 @@
 class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
-  after_create :welcome_email
+  after_create :send_welcome_email
 
   def set_default_role
     self.role ||= :user
   end
 
-  def welcome_email
-    UserMailer.welcome_email(self).deliver_now
+  def send_welcome_email
+    UserMailer.welcome(self).deliver_now
   end
 
 
