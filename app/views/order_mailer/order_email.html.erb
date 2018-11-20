@@ -1,33 +1,6 @@
-<p>
-  Order Information <br>
+Coffees ordered: <br>
+  Coffees¡
 
-  Customer Information: <br>
-  Company name: <%= "#{@company_name}" %> <br>
-  Customer first name: <%= "#{@customer_first_name}" %> <br>
-  Customer last name: <%= "#{@customer_last_name}" %> <br>
-  Customer email: <%= "#{@customer_email}" %> <br>
-  Customer Phone: <%= "#{@phone_number}" %> <br>
-  VAT number: <%= "#{@vat_number}" %> <br>
+  Coffee id: <%= "#{Order.last}" %> <br>
 
-  Shipping Information: <br>
-  Address: <%= "#{@customer_shipping_address}" %> <br>
-  Postcode: <%= "#{@customer_shipping_postcode}" %> <br>
-  City: <%= "#{@customer_shipping_city}" %> <br>
   Country: <%= "#{@customer_shipping_country}" %> <br>
-
-  Further information: <br>
-  Special requests: <%= "#{@special_request}" %> <br>
-
-  Coffees ordered: <br>
-  Coffees <br>
-  Coffee id: <%= "#{Order.last.order_items[1].coffee_id}" %> <br>
-  Coffee id: <%= "#{Order.last.order_items[2].coffee_id}" %> <br>
-  Coffee id: <%= "#{Order.last.order_items[3].coffee_id}" %> <br>
-  Coffee id: <%= "#{Order.last.order_items[4].coffee_id}" %> <br>
-
-</p>
-
-
-
-
-
