@@ -8,6 +8,7 @@ class OrderMailer < ApplicationMailer
 
     @company_name = company_name
     @customer_email = customer_email
+    @phone_number = phone_number
     @customer_first_name = customer_first_name
     @customer_last_name = customer_last_name
     @customer_billing_address = customer_billing_address
