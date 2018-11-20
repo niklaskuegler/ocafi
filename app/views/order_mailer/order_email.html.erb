@@ -1,6 +1,10 @@
 Coffees ordered: <br>
-  Coffees¡
 
-  Coffee id: <%= "#{Order.last}" %> <br>
+  All order items: <%= "#{Order.last.order_items}" %> <br>
 
-  Country: <%= "#{@customer_shipping_country}" %> <br>
+  All order items: <%= "#{Order.last.order_items[0]}" %> <br>
+
+  All order items: <%= "#{Order.last.order_items[1]}" %> <br>
+
+
+
