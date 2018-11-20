@@ -1,15 +1,15 @@
 class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
-  after_create :send_welcome_email
+  #after_create :send_welcome_email
 
   def set_default_role
     self.role ||= :user
   end
 
-  def send_welcome_email
-    UserMailer.welcome_email(self).deliver_now
-  end
+  #def send_welcome_email
+  #  UserMailer.welcome_email(self).deliver_now
+  #end
 
 
   # Include default devise modules. Others available are:
