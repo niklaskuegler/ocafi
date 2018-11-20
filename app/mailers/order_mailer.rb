@@ -15,5 +15,6 @@ class OrderMailer < ApplicationMailer
     @special_request = special_request
 
     mail(from: customer_email, subject: 'Customer Order Details')
+
   end
 end
