@@ -1,10 +1,13 @@
 Coffees ordered: <br>
 
-  All order items: <%= "#{Order.last.order_items}" %> <br>
+  All order items: <%= "#{@order}" %> <br>
 
-  All order items: <%= "#{Order.last.order_items[0].coffee_id}" %>, <%= "#{Order.last.order_items[0].quantity}" %> <br>
+  All order items:
+  <% @order_items.each do |orderitem| %>
+    Coffee id:<%= orderitem.coffee_id %>
+  <% end %>
 
-  All order items: <%= "#{Order.last.order_items[1].coffee_id}" %>, <%= "#{Order.last.order_items[1].quantity}" %> <br>
 
-  All order items: <%= "#{Order.last.order_items[2].coffee_id}" %>, <%= "#{Order.last.order_items[2].quantity}" %> <br>
+
+
 
