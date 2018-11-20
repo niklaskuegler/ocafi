@@ -4,7 +4,6 @@ class OrderMailer < ActionMailer::Base
   def order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request)
     @company_name = company_name
     @customer_email = customer_email
-    @phone_number = phone_number
     @customer_first_name = customer_first_name
     @customer_last_name = customer_last_name
     @customer_billing_address = customer_billing_address
