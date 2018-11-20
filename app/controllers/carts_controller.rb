@@ -25,9 +25,7 @@ class CartsController < ApplicationController
       vat_number = params[:order][:vat_number]
       special_request = params[:order][:special_request]
 
-      current_order_items = params[:order_items]
-
-      OrderMailer.order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request, current_order_items).deliver
+      OrderMailer.order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request).deliver
 
       #flash does not work yet
       flash[:success] = "Order placed"
