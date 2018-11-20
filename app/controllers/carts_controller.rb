@@ -9,6 +9,8 @@ class CartsController < ApplicationController
     @order = current_order
     if @order.update(order_params)
 
+      @order = current_order
+
       #Update trigger for mail - check for validations
       company_name = params[:order][:company_name]
       customer_first_name = params[:order][:customer_first_name]
@@ -22,7 +24,7 @@ class CartsController < ApplicationController
       vat_number = params[:order][:vat_number]
       special_request = params[:order][:special_request]
 
-      OrderMailer.order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request).deliver
+      OrderMailer.order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request, @order).deliver
 
       #flash does not work yet
       flash[:success] = "Order placed"

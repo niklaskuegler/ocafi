@@ -15,19 +15,19 @@
   City: <%= "#{@customer_shipping_city}" %> <br>
   Country: <%= "#{@customer_shipping_country}" %> <br>
 
-  Further information:
+  Further information: <br>
   Special requests: <%= "#{@special_request}" %> <br>
 
-
-  Coffees Ordered:
-  Coffee: <%= "#{OrderItem.first.coffee_id}" %> <br>
-  Order_id: <%= "#{OrderItem.first.order_id}" %> <br>
-  Unit Price: <%= "#{OrderItem.first.unit_price}" %> <br>
-  Quantity: <%= "#{OrderItem.first.quantity}" %> <br>
-
-
-
-  Samples Ordered:
-
+  Coffees ordered: <br>
+  1. Coffee <br>
+  Coffee id: <%= "#{Order.last.order_items[1].coffee_id}" %> <br>
+  Quantity: <%= "#{Order.last.order_items[2].quantity}" %> <br>
+  Price: <%= "#{Order.last.order_items[3].unit_price}" %> <br>
+  Sample: <%= "#{Order.last.order_items[4].sample}" %> <br>
 
 </p>
+
+
+
+
+
