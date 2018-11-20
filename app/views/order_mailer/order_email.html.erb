@@ -1,10 +1,12 @@
 Coffees ordered: <br>
 
-  All order items: <%= "#{@order}" %> <br>
-
   All order items:
   <% @order_items.each do |orderitem| %>
-    Coffee id:<%= orderitem.coffee_id %>
+    Coffee id:<%= orderitem.coffee_id %> <br>
+    Order id:<%= orderitem.order_id %> <br>
+    Quantity:<%= orderitem.quantity %> <br>
+    Unit Price:<%= orderitem.unit_price %> <br>
+    _________________________________________
   <% end %>
 
 
