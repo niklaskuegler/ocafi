@@ -20,10 +20,10 @@
 
 
   Coffees Ordered:
-
-  <% @quantities.each do |quantitiy| %>
-    <= quantity.first %>
-  <% end %>
+  Coffee: <%= "#{OrderItem.first.coffee_id}" %> <br>
+  Order_id: <%= "#{OrderItem.first.order_id}" %> <br>
+  Unit Price: <%= "#{OrderItem.first.unit_price}" %> <br>
+  Quantity: <%= "#{OrderItem.first.quantity}" %> <br>
 
 
 
