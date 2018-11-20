@@ -20,8 +20,12 @@
 
 
   Coffees Ordered:
-  Batch: <%= @order_item.first.coffee.batch %> <br>
-  Quantity: <%= @order_item.first.coffee.quantity %>
+
+  <% @quantities.each do |quantitiy| %>
+    <= quantity.first %>
+  <% end %>
+
+
 
   Samples Ordered:
 
