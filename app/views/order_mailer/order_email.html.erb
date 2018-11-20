@@ -1,31 +1,31 @@
-Coffees ordered: <br>
+Hi Ocafi, a new order has come in. Reply within 20 hours. <br>
 
   Customer Information: <br>
-  Company name: <%= "#{@company_name}" %> <br>
-  Customer first name: <%= "#{@customer_first_name}" %> <br>
-  Customer last name: <%= "#{@customer_last_name}" %> <br>
-  Customer email: <%= "#{@customer_email}" %> <br>
-  Customer Phone: <%= "#{@phone_number}" %> <br>
-  VAT number: <%= "#{@vat_number}" %> <br>
-
+  _________________________________________ <br>
+  Company name:         <%= "#{@company_name}" %> <br>
+  _________________________________________ <br>
+  Customer first name:  <%= "#{@customer_first_name}" %> <br>
+  Customer last name:   <%= "#{@customer_last_name}" %> <br>
+  Customer email:       <%= "#{@customer_email}" %> <br>
+  Customer Phone:       <%= "#{@phone_number}" %> <br>
+  VAT number:           <%= "#{@vat_number}" %> <br>
+  Special requests:     <%= "#{@special_request}" %> <br>
+  _________________________________________ <br>
   Shipping Information: <br>
-  Address: <%= "#{@customer_shipping_address}" %> <br>
-  Postcode: <%= "#{@customer_shipping_postcode}" %> <br>
-  City: <%= "#{@customer_shipping_city}" %> <br>
-  Country: <%= "#{@customer_shipping_country}" %> <br>
-
-  Further information: <br>
-  Special requests: <%= "#{@special_request}" %> <br>
-
+  _________________________________________ <br>
+  Address:              <%= "#{@customer_billing_address}" %> <br>
+  Postcode:             <%= "#{@customer_billing_postcode}" %> <br>
+  City:                 <%= "#{@customer_billing_city}" %> <br>
+  Country:              <%= "#{@customer_billing_country}" %> <br>
+  _________________________________________ <br>
   All order items: <br>
   _________________________________________ <br>
-
   <% @order_items.each do |orderitem| %>
-    Coffee id:<%= orderitem.coffee_id %> <br>
-    Order id:<%= orderitem.order_id %> <br>
-    Quantity:<%= orderitem.quantity %> <br>
-    Unit Price:<%= orderitem.unit_price %> <br>
-    Sample:<%= orderitem.sample %> <br>
+    Coffee id:      <%= orderitem.coffee_id %> <br>
+    Order id:       <%= orderitem.order_id %> <br>
+    Quantity:       <%= orderitem.quantity %> <br>
+    Unit Price:     <%= orderitem.unit_price %> <br>
+    Sample:         <%= orderitem.sample %> <br>
     _________________________________________ <br>
   <% end %>
 

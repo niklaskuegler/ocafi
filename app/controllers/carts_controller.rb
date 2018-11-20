@@ -41,7 +41,7 @@ class CartsController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:company_name, :customer_first_name, :customer_last_name, :customer_billing_address, :customer_billing_postcode, :customer_billing_city, :customer_billing_country, :customer_billing_state, :vat_number, :special_request)
+    params.require(:order).permit(:company_name, :customer_first_name, :customer_last_name, :phone_number, :customer_email, :customer_billing_address, :customer_billing_postcode, :customer_billing_city, :customer_billing_country, :customer_billing_state, :vat_number, :special_request)
   end
 
 end
