@@ -43,6 +43,23 @@
   justify-content: space-between;
 }
 
+/* Ocafi Slogan */
+.navbar-slogan-ocafi {
+  color: #616668;
+  cursor: pointer;
+}
+
+.navbar-a-slogan {
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #616668;
+  }
+}
+
+.vertical-align-link-slogan {
+  padding-top: 14px;
+}
+
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
