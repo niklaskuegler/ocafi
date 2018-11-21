@@ -8,7 +8,7 @@ class CoffeesController < ApplicationController
   end
 
   def show
-    @coffees = Coffee.friendly.find(params[:id])
+    @coffees = Coffee.find(params[:id])
   end
 
   def new
