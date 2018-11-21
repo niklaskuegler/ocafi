@@ -25,7 +25,7 @@
     <div class="link-container vertical-align-link ">
       <div class="farmers-testing">
         <div class="navbar-a nav-item-dropdown">
-          <%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a dropdown-trigger" %>
+          <%= link_to "Farmers", "/farmers", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a dropdown-trigger" %>
           <ul class="dropdown-menu">
             <li class="dropdown-menu-item">
               <a class="styling" href="farmers/1">Fazenda Mataõ</a>
@@ -70,14 +70,14 @@
                 <div class="navbar-a nav-item-dropdown">
                   <p class="navbar-wagon-item navbar-wagon-link vertical-align-link-a dropdown-trigger">Welcome, <%= current_user.username %></p>
                   <ul class="dropdown-menu spacing-top-private">
-                    <li class="dropdown-menu-item">
+                    <!--<li class="dropdown-menu-item">
                       <%= link_to "#" do %>
                         <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
                       <% end %>
-                    </li>
+                    </li>-->
                     <li class="dropdown-menu-item">
                       <%= link_to destroy_user_session_path, method: :delete do %>
-                        <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+                        <i class="fas fa-sign-out-alt"></i>  <%= t(".sign_out", default: "Log out") %>
                       <% end %>
                     </li>
                   </ul>
@@ -141,15 +141,16 @@
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
-          <li><%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Farmers", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %></li>
-          <li><%= link_to "#" do %>
+          <li><%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <!--<li><%= link_to "#" do %>
             <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
             <% end %>
-          </li>
+          </li> -->
           <li>
             <%= link_to destroy_user_session_path, method: :delete do %>
-              <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <i class="fas fa-sign-out-alt"></i>  <%= t(".sign_out", default: "Log out") %>
             <% end %>
           </li>
         </ul>
@@ -159,6 +160,7 @@
           <li><%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Our Coffees", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
         </ul>
 
