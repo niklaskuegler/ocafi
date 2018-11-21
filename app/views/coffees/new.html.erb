@@ -6,6 +6,7 @@
   <div class="form">
     <div class="form-field">
       <%= simple_form_for @coffee do |c| %>
+        <%= c.input :name, class: "form-control" %>
         <%= c.input :bags, class: "form-control" %>
         <%= c.input :process, class: "form-control" %>
         <%= c.input :certification, class: "form-control" %>

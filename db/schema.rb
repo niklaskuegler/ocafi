@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_161536) do
+ActiveRecord::Schema.define(version: 2018_11_21_163602) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,9 @@ ActiveRecord::Schema.define(version: 2018_11_21_161536) do
     t.float "price2"
     t.string "cup_description"
     t.integer "sample_packaging"
+    t.string "slug"
     t.index ["farmer_id"], name: "index_coffees_on_farmer_id"
+    t.index ["slug"], name: "index_coffees_on_slug", unique: true
   end
 
   create_table "farmers", force: :cascade do |t|
