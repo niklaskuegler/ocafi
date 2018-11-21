@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   #get 'carts/show'
 
-  resource :cart, only: [:show, :update, :edit]
+  resource :cart, only: [:show, :update, :edit, :destroy]
   resources :order_items, only: [:create, :update, :destroy]
 
   patch "/cart", to: "orders#update", as: "update_order"
