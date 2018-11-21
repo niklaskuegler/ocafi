@@ -1,4 +1,6 @@
 class Farmer < ApplicationRecord
+  extend FriendlyId
+  friendly_id :farm_name, use: :slugged
 
   mount_uploader :farmer_photo, PhotoUploader
   mount_uploader :farm_landscape1, PhotoUploader
