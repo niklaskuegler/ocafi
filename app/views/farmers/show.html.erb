@@ -3,6 +3,12 @@
 <%= render 'shared/coffee_show/coffee_content' %>
 <%= render 'shared/coffee_show/long_description' %>
 <%= render 'shared/coffee_show/farm_image_carousel' %>
+<% if user_signed_in? %>
+  <% if current_user.admin? == true %>
+    <%= link_to "Edit", edit_farmer_path(@farmers), class: "btn btn-primary btn-lg" %>
+  <% end %>
+<% else %>
+<% end %>
 <%= render 'shared/coffee_show/order_now' %>
 <%= render 'shared/follow_us_footer' %>
 

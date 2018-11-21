@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   patch "/cart", to: "orders#update", as: "update_order"
 
-  resources :farmers
+  resources :farmers, param: :slug
 
   resources :coffees
 
@@ -28,12 +28,6 @@ Rails.application.routes.draw do
   get "/general-terms-conditions-purchase", to: "pages#general_terms_condition_purchase", as: "general_terms_condition_purchase"
 
   get "/privacy-policy", to: "pages#privacy_policy", as: "privacy_policy"
-
-  get "/our-coffee/fazenda-matao", to: "pages#fazenda_matao", as: "fazenda_matao"
-
-  get "/our-coffee/fazenda-santa-alina", to: "pages#fazenda_santa_alina", as: "fazenda_santa_alina"
-
-  get "/our-coffee/fazenda-alianca", to: "pages#fazenda_alianca", as: "fazenda_alianca"
 
 
 
