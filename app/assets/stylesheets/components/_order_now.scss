@@ -1,0 +1,56 @@
+.order_now_basics {
+  background-color: $gray-corporate;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.order_now_text_part {
+  color: white;
+  height: 150px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.order_now_button_part {
+  height: 150px;
+}
+
+/* vertically aligning all objects */
+.vertically_align_order_now_content_wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.vertically_align_order_now_content {
+  display: table-cell;
+  height: 100%;
+}
+
+.vertically_align_order_now_content_middle {
+  vertical-align: middle;
+}
+
+/* Order now button */
+
+.order-button {
+  a {
+    font-size: 30px;
+    font-weight: 700;
+    background-color: orange;
+    color: $gray-corporate;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  a:hover{
+    text-decoration: none;
+    background-color: orange;
+  }
+}
+
+.order-button-grow { transition: all .2s ease-in-out;}
+.order-button-grow:hover { transform: scale(1.05) }
