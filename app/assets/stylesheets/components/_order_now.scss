@@ -91,6 +91,55 @@
   }
 }
 
+.heading-order-now-home {
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.text-order-now-home {
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+/* Home page */
+.height-text-order-now {
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+  @media (max-width: 440px) {
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.height-button-order-now {
+  @media (max-width: 770px) {
+    padding-left: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 /* Order now button */
 
 .order-button {
