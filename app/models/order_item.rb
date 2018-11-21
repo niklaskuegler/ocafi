@@ -1,6 +1,6 @@
 class OrderItem < ApplicationRecord
   belongs_to :coffee
-  belongs_to :order
+  belongs_to :order, dependent: :destroy
 
   validates :quantity, presence: true
   validate :coffee_present
