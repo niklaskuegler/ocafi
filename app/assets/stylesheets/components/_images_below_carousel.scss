@@ -33,7 +33,7 @@
   width: 100%;
 
   // Remove this maybe?
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.16), 0 1px 1px rgba(0,0,0,0.23);
 }
 
 .image_home {
@@ -150,6 +150,10 @@
   padding-left: 6vw;
   padding-right: 6vw;
   background-color: $beige;
+
+  @media (max-width: 720px) {
+    height: 300px;
+  }
 }
 
 .vertical-align--middle {

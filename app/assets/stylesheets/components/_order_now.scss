@@ -1,0 +1,164 @@
+.order_now_basics {
+  background-color: $gray-corporate;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.order_now_text_part {
+  color: white;
+  height: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 65px;
+  }
+
+  @media (max-width: 440px) {
+    height: 65px;
+  }
+}
+
+.order_now_farmer {
+  padding-left: 200px;
+
+  @media (max-width: 1200px) {
+    padding-left: 200px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-left: 120px;
+  }
+
+  @media (max-width: 770px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 30px;
+  }
+}
+
+.order_now_button_part {
+  height: 200px;
+
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 100px;
+
+    padding-left: 120px;
+
+  }
+
+  @media (max-width: 440px) {
+    height: 100px;
+    padding-left: 30px;
+
+  }
+}
+
+/* vertically aligning all objects */
+.vertically_align_order_now_content_wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.vertically_align_order_now_content {
+  display: table-cell;
+  height: 100%;
+}
+
+.vertically_align_order_now_content_middle {
+  vertical-align: middle;
+}
+
+.heading-order-now-footer {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+
+  @media (max-width: 440px) {
+    font-size: 20px;
+  }
+}
+
+.heading-order-now-home {
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.text-order-now-home {
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+/* Home page */
+.height-text-order-now {
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+  @media (max-width: 440px) {
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.height-button-order-now {
+  @media (max-width: 770px) {
+    padding-left: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* Order now button */
+
+.order-button {
+  a {
+    font-size: 30px;
+    font-weight: 700;
+    background-color: orange;
+    color: $gray-corporate;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  a:hover{
+    text-decoration: none;
+    background-color: orange;
+  }
+}
+
+.order-button-grow { transition: all .2s ease-in-out;}
+.order-button-grow:hover { transform: scale(1.05) }
