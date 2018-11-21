@@ -2,7 +2,7 @@
   <div class="container-coffee">
     <div class="row">
       <% @farmers.each do |farmer| %>
-        <a href="/farmers/<%= farmer.id %>">
+        <a href="/farmers/<%= farmer.slug %>">
           <div class="col-xs-12 col-md-6 col-lg-4">
             <!-- insert <div class="card"> -->
             <div class="card grow">
@@ -14,7 +14,7 @@
                     <div class="items-center">
                       <h4><%= farmer.farm_name %> <br></h4>
                       <h4><%= farmer.first_name %> <%= farmer.last_name %> <br></h4>
-                      <h3><%= link_to farmer.farm_name, farmer %></h3>
+                      <!--<h3><%= link_to farmer.farm_name, farmer %></h3>-->
                     </div>
                   </div>
                 </div>
