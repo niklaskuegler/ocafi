@@ -7,13 +7,62 @@
 
 .order_now_text_part {
   color: white;
-  height: 150px;
+  height: 200px;
   padding-left: 5%;
   padding-right: 5%;
+
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 65px;
+  }
+
+  @media (max-width: 440px) {
+    height: 65px;
+  }
+}
+
+.order_now_farmer {
+  padding-left: 200px;
+
+  @media (max-width: 1200px) {
+    padding-left: 200px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-left: 120px;
+  }
+
+  @media (max-width: 770px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 30px;
+  }
 }
 
 .order_now_button_part {
-  height: 150px;
+  height: 200px;
+
+  @media (max-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (max-width: 770px) {
+    height: 100px;
+
+    padding-left: 120px;
+
+  }
+
+  @media (max-width: 440px) {
+    height: 100px;
+    padding-left: 30px;
+
+  }
 }
 
 /* vertically aligning all objects */
@@ -30,6 +79,16 @@
 
 .vertically_align_order_now_content_middle {
   vertical-align: middle;
+}
+
+.heading-order-now-footer {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+
+  @media (max-width: 440px) {
+    font-size: 20px;
+  }
 }
 
 /* Order now button */
