@@ -4,7 +4,11 @@
     <%= link_to root_path, class: "navbar-wagon-brand" do %>
       <%= image_tag "ocafi_logo.svg", height: 50 %>
     <% end %>
-    <span class="ocafi-trading-slogan">Ocafi Trading</span>
+    <div class="vertical-align-link-slogan">
+      <div class="navbar-a-slogan">
+        <%= link_to "Ocafi Trading", "/", class: "navbar-slogan-ocafi ocafi-trading-slogan" %>
+      </div>
+    </div>
   </div>
 
 
@@ -47,13 +51,15 @@
       </div>
     </div>
 
+    <div class="link-container vertical-align-link">
+      <div class="navbar-a">
+         <%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
+      </div>
+    </div>
+
     <% if user_signed_in? %>
 
-      <div class="link-container vertical-align-link">
-        <div class="navbar-a">
-          <%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link vertical-align-link-a" %>
-        </div>
-      </div>
+
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
