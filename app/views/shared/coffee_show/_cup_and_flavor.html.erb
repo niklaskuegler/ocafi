@@ -15,9 +15,9 @@
           <h5 class="farm-discription-headers">Technical Information</h5><br>
           <ul class="flavor-profile">
             <li class="flavor-profile-item"><p class="text-description">Region: </p><p><%= @farmers.region %></p></li>
-            <li class="flavor-profile-item"><p class="text-description">Crop Year: </p><p><%= @farmers.coffees.first.year %></p></li>
-            <li class="flavor-profile-item"><p class="text-description">Process Type: </p><p><%= @farmers.coffees.first.process %></p></li>
-            <li class="flavor-profile-item"><p class="text-description">Variety: </p><p>Catuai</p></li>
+            <li class="flavor-profile-item"><p class="text-description">Crop Year: </p><p><%= coffee.year %></p></li>
+            <li class="flavor-profile-item"><p class="text-description">Process Type: </p><p><%= coffee.process %></p></li>
+            <li class="flavor-profile-item"><p class="text-description">Variety: </p><p><%= coffee.variety %></p></li>
         </div>
         </ul>
       </div>
@@ -26,15 +26,21 @@
         <ul class="flavor-profile">
           <li class="flavor-profile-item">
             <div class="flavor-description">
-              <div class="flavor-unique" style=" background-image: url('<%= @farmers.coffees.last.flavor1_image  %>')"></div>
+              <div class="flavor-unique" style=" background-image: url('<%= coffee.flavor1_image  %>')"></div>
             </div>
               <p class="margin-top-vertical-align"><%= coffee.flavor1 %></p>
           </li>
           <li class="flavor-profile-item">
             <div class="flavor-description">
-              <div class="flavor-unique" style=" background-image: url('<%= @farmers.coffees.last.flavor2_image  %>')"></div>
+              <div class="flavor-unique" style=" background-image: url('<%= coffee.flavor2_image  %>')"></div>
             </div>
               <p class="margin-top-vertical-align"><%= coffee.flavor2 %></p>
+          </li>
+          <li class="flavor-profile-item">
+            <div class="flavor-description">
+              <div class="flavor-unique" style=" background-image: url('<%= coffee.flavor3_image  %>')"></div>
+            </div>
+              <p class="margin-top-vertical-align"><%= coffee.flavor3 %></p>
           </li>
 
         </ul>
