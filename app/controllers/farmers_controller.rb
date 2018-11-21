@@ -1,5 +1,6 @@
 class FarmersController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
+  before_action :set_farmer, only: [:edit, :update, :destroy, :show]
 
 
   def index
@@ -7,7 +8,7 @@ class FarmersController < ApplicationController
   end
 
   def show
-    @farmers = Farmer.friendly.find(params[:id])
+    @farmers = Farmer.friendly.find(params[:slug])
   end
 
   def new
@@ -29,8 +30,15 @@ class FarmersController < ApplicationController
   end
 
   def update
-    @farmer = Farmer.find(params[:id])
-    @farmer.update(farmer_params)
+    if @farmer.update(farmer_params)
+      redirect_to farmer_path(@farmer)
+    else
+      render 'edit'
+    end
+    #@farmer = Farmer.friendly.find(params[:id])
+    #@farmer.update(farmer_params)
+    #redirect_to farmers_url
+
 
     #if @farmer.update(farmer_params)
       #redirect_to @farmer, notice 'Farmer successfully updated'
@@ -54,7 +62,7 @@ class FarmersController < ApplicationController
   end
 
   def set_farmer
-    @farmer = Farmer.find(params[:id])
+    @farmer = Farmer.friendly.find(params[:slug])
   end
 
 end
