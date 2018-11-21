@@ -7,7 +7,7 @@ body {
 .height-management {
 
 .carousel-inner {
-  height: 70vh;
+  height: calc(100vh - 70px);
 }
 
 
@@ -18,7 +18,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: calc(100vh - 70px);
 }
 
 
