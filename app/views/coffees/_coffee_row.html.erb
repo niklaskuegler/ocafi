@@ -17,7 +17,7 @@
           <span class="center-heading">About this Coffee</span>
           <a class="close" href="/coffees" style="background-color: white;">&times;</a>
           <div class="content-farm">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsa quibusdam recusandae. Vitae odio non eos voluptatibus cum pariatur, asperiores iure eum deleniti quaerat sequi cumque delectus aliquid maxime eius natus dolores accusantium deserunt. Laboriosam natus quasi consectetur distinctio placeat quibusdam, molestias numquam in voluptates esse? Sapiente animi minima nulla. <a href="farmers/<%= coffee.farmer.id %>">Learn more...</a>
+              <p><%= coffee.farmer.long_description.first(400) %>...   <a href="farmers/<%= coffee.farmer.id %>">Learn more</a>
               </p>
           </div>
           <div class="row">
