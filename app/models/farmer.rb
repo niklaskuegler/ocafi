@@ -1,4 +1,5 @@
 class Farmer < ApplicationRecord
+
   mount_uploader :farmer_photo, PhotoUploader
   mount_uploader :farm_landscape1, PhotoUploader
   mount_uploader :farm_landscape2, PhotoUploader
