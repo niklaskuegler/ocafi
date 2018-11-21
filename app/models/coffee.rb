@@ -1,4 +1,7 @@
 class Coffee < ApplicationRecord
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
   belongs_to :farmer
 
   mount_uploader :flavor1_image, PhotoUploader

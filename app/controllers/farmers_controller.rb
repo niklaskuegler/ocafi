@@ -1,12 +1,13 @@
 class FarmersController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
 
+
   def index
     @farmers = Farmer.all
   end
 
   def show
-    @farmers = Farmer.find(params[:id])
+    @farmers = Farmer.friendly.find(params[:id])
   end
 
   def new
