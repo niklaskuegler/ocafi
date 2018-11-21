@@ -14,22 +14,22 @@ Rails.application.initialize!
 #}
 #ActionMailer::Base.delivery_method = :smtp
 
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.postmarkapp.com',
-  :port           => '25',
-  :authentication => :plain,
-  :user_name      => ENV['POSTMARK_API_KEY'],
-  :password       => ENV['POSTMARK_API_TOKEN'],
-  :domain         => 'www.ocafi.de'
-}
-ActionMailer::Base.delivery_method = :smtp
-
 #ActionMailer::Base.smtp_settings = {
-#  :address        => 'email-smtp.eu-west-1.amazonaws.com',
+#  :address        => 'smtp.postmarkapp.com',
 #  :port           => '25',
 #  :authentication => :plain,
-#  :user_name      => ENV['AWS_USERNAME'],
-#  :password       => ENV['AWS_PASSWORD'],
+##  :user_name      => ENV['POSTMARK_API_KEY'],
+#  :password       => ENV['POSTMARK_API_TOKEN'],
 #  :domain         => 'www.ocafi.de'
 #}
 #ActionMailer::Base.delivery_method = :smtp
+
+ActionMailer::Base.smtp_settings = {
+  :address        => 'email-smtp.eu-west-1.amazonaws.com',
+  :port           => '25',
+  :authentication => :plain,
+  :user_name      => ENV['AWS_USERNAME'],
+  :password       => ENV['AWS_PASSWORD'],
+  :domain         => 'www.ocafi.de'
+}
+ActionMailer::Base.delivery_method = :smtp
