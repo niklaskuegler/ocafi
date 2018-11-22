@@ -8,7 +8,7 @@ class CoffeesController < ApplicationController
   end
 
   def show
-    @coffees = Coffee.find(params[:id])
+    @coffees = Coffee.friendly.find(params[:slug])
   end
 
   def new
@@ -25,8 +25,11 @@ class CoffeesController < ApplicationController
   end
 
   def update
-    @coffee = Coffee.find(params[:id])
-    @coffee.update(coffee_params)
+    if @coffee.update(coffee_params)
+      redirect_to coffee_path(@coffee)
+    else
+      render 'edit'
+    end
   end
 
   def destroy
@@ -42,6 +45,6 @@ class CoffeesController < ApplicationController
   end
 
   def set_coffee
-    @coffee = Coffee.find(params[:id])
+    @coffee = Coffee.friendly.find(params[:slug])
   end
 end

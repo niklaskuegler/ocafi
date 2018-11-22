@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   resources :farmers, param: :slug
 
-  resources :coffees
+  resources :coffees, param: :slug
 
   resources :newsletters, only: [:create]
 

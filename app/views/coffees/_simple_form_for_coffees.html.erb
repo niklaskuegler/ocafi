@@ -1,0 +1,35 @@
+<div class="white-box white-box-coffee-new" style="background-color: light-gray;">
+  <div class="form-header">
+    <h5>Create a new Coffee - make sure to put in the right farmer id.</h5>
+    <p>Please fill out everybox below</p>
+  </div>
+  <div class="form">
+    <div class="form-field">
+      <%= simple_form_for @coffee do |c| %>
+        <%= c.input :name, class: "form-control" %>
+        <%= c.input :bags, class: "form-control" %>
+        <%= c.input :process, class: "form-control" %>
+        <%= c.input :certification, class: "form-control" %>
+        <%= c.input :year, class: "form-control" %>
+        <%= c.input :price, class: "form-control" %>
+        <%= c.input :price2, class: "form-control" %>
+        <%= c.input :sku, class: "form-control"%>
+        <%= c.input :farmer_id, class: "form-control"%>
+        <%= c.input :cup_description, class: "form-control"%>
+        <%= c.input :sample_packaging, class: "form-control"%>
+        <%= c.input :packaging %>
+        <%= c.input :batch %>
+        <%= c.input :score %>
+        <%= c.input :variety %>
+        <%= c.input :screensize %>
+        <%= c.input :flavor1 %>
+        <%= c.input :flavor2 %>
+        <%= c.input :flavor3 %>
+        <%= c.input :flavor1_image %>
+        <%= c.input :flavor2_image %>
+        <%= c.input :flavor3_image %>
+        <%= c.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
