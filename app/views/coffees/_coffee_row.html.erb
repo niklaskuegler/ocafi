@@ -14,15 +14,15 @@
       </div>
       <div id="<%= coffee.slug %>" class="overlay">
         <div class="popup">
-          <span class="center-heading">About this Coffee</span>
+          <span class="center-heading">Über diesen Kaffee</span>
           <a class="close" href="/coffees" style="background-color: white;">&times;</a>
           <div class="content-farm">
-              <p><%= coffee.farmer.long_description.first(400) %>...   <a href="farmers/<%= coffee.farmer.id %>">Learn more</a>
+              <p><%= coffee.farmer.long_description.first(400) %>...   <a href="farmers/<%= coffee.farmer.id %>">Mehr Erfahren</a>
               </p>
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <h6>About the Farm</h6>
+              <h6>Über die Farm</h6>
               <ul class="top">
                 <li>
                   <p class="technical-info-popup">Farm:</p><p><%= coffee.farmer.farm_name %></p>
@@ -31,7 +31,7 @@
                   <p class="technical-info-popup">Farmer:</p><p><%= coffee.farmer.first_name %> <%= coffee.farmer.last_name %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Origin:</p><p><%= coffee.farmer.origin %></p>
+                  <p class="technical-info-popup">Ursprung:</p><p><%= coffee.farmer.origin %></p>
                 </li>
                 <li>
                   <p class="technical-info-popup">Region:</p><p><%= coffee.farmer.region %></p>
@@ -40,46 +40,46 @@
               <h6>About the Coffee</h6>
               <ul>
                 <li>
-                  <p class="technical-info-popup">Variety:</p><p><%= coffee.variety %></p>
+                  <p class="technical-info-popup">Sorte:</p><p><%= coffee.variety %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Process:</p><p><%= coffee.process %></p>
+                  <p class="technical-info-popup">Prozess:</p><p><%= coffee.process %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Certifications:</p><p><%= coffee.certification%></p>
+                  <p class="technical-info-popup">Zertifikationen:</p><p><%= coffee.certification%></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Crop Year:</p><p><%= coffee.year %></p>
+                  <p class="technical-info-popup">Jahr:</p><p><%= coffee.year %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Bag size:</p><p><%= coffee.packaging %></p>
+                  <p class="technical-info-popup">Sack Größe:</p><p><%= coffee.packaging %></p>
                 </li>
                 <li>
                   <p class="technical-info-popup">Cup score:</p><p><%= coffee.score %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Cup score:</p><p><%= coffee.screensize %></p>
+                  <p class="technical-info-popup">Größe:</p><p><%= coffee.screensize %></p>
                 </li>
               </ul>
             </div>
             <div class="col-lg-6">
-              <h6>Flavor Profile</h6>
+              <h6>Geschmacksprofil</h6>
               <ul class="top">
                 <li>
-                  <p class="technical-info-popup">Notes:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
+                  <p class="technical-info-popup">Cup Profil:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Description:</p>
+                  <p class="technical-info-popup">Cup Beschreibung:</p>
                   <p class="cup_description"><%= coffee.cup_description %></p>
                 </li>
               </ul>
               <h6>Price & Purchase</h6>
               <ul>
                 <li>
-                  <p class="technical-info-popup">1+ Bags:</p><p><%= coffee.price %> Euro</p>
+                  <p class="technical-info-popup">1+ Säcke:</p><p><%= coffee.price %> Euro</p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">5+ Bags:</p><p><%= coffee.price2 %> Euro</p>
+                  <p class="technical-info-popup">5+ Säcke:</p><p><%= coffee.price2 %> Euro</p>
                 </li>
               </ul>
 
@@ -87,16 +87,16 @@
                   <div class="input-group">
                     <div class="bag_amount">
                       <%= f.number_field :quantity, value: 0, class: "number_field_bags", min: 0 %>
-                      <span>Bags to Cart</span>
+                      <span>Säcke zum Warenkorb</span>
                     </div>
                     <div class="sample_wanted">
                       <%= f.check_box :sample, class: "regular-checkbox" %>
-                      <span>Sample wanted</span>
+                      <span>Sample erwünscht</span>
                     </div>
                     <div class="button-order-input-group">
                       <div class="input-group-btn">
                         <%= f.hidden_field :coffee_id, value: coffee.id %>
-                        <%= f.submit "Add to Cart", class: "btn btn-primary button-order-input-padding" %>
+                        <%= f.submit "Hinzufügen", class: "btn btn-primary button-order-input-padding" %>
                       </div>
                     </div>
                   </div>
