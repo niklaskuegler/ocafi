@@ -18,7 +18,7 @@ class OrderMailer < ApplicationMailer
     @vat_number = vat_number
     @special_request = special_request
 
-    mail(from: customer_email, subject: 'Customer Order Details')
+    mail(from: "niklas@ocafi.de", subject: 'Customer Order Details')
 
   end
 end
