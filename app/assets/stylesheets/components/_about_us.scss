@@ -8,21 +8,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: .3s;
-
-  @media (max-width: 720px) {
-    height: 300px;
-  }
 }
 
 .style_img_about_us{
-  height: 50vh;
+  height: 420px;
   width: 100%;
   position: relative;
 
-  @media (max-width: 720px) {
-    height: 300px;
+  @media (max-width: 1400px) {
+    height: 370px;
   }
 
+  @media (max-width: 1000px) {
+    height: 320px;
+  }
 }
 
 .style_luis_image:hover {
@@ -47,22 +46,14 @@
 }
 
 
-
-
-
 .style_niklas_image {
-  height: 50vh;
+  height: 100%;
   width: 100%;
   background-image: image-url("niklas.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: .3s;
-
-
-  @media (max-width: 720px) {
-    height: 300px;
-  }
 }
 
 .style_niklas_image:hover {
@@ -118,4 +109,29 @@
 .text-right {
   text-align: right;
   padding-right: 1%;
+}
+
+.about-us-text-size {
+
+  h3 {
+    @media (max-width: 1200px) {
+      font-size: 25px;
+    }
+  }
+
+  h4 {
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
