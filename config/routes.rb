@@ -29,6 +29,8 @@ Rails.application.routes.draw do
 
   get "/privacy-policy", to: "pages#privacy_policy", as: "privacy_policy"
 
+  get "/impressum", to: "pages#impressum", as: "impressum"
+
 
 
 

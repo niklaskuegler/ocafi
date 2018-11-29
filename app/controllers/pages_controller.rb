@@ -16,6 +16,9 @@ class PagesController < ApplicationController
   def general_terms_condition_purchase
   end
 
+  def impressum
+  end
+
   def privacy_policy
   end
 
