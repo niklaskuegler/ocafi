@@ -23,9 +23,7 @@ Rails.application.routes.draw do
 
   get "/mission-vision", to: "pages#mission_vision", as: "mission_vision"
 
-  get "/general-terms-conditions-supply", to: "pages#general_terms_condition_supply", as: "general_terms_condition_supply"
-
-  get "/general-terms-conditions-purchase", to: "pages#general_terms_condition_purchase", as: "general_terms_condition_purchase"
+  get "/general-terms-of-trade", to: "pages#general_terms_of_trade", as: "general_terms_of_trade"
 
   get "/privacy-policy", to: "pages#privacy_policy", as: "privacy_policy"
 
