@@ -10,10 +10,10 @@ class PagesController < ApplicationController
   def mission_vision
   end
 
-  def general_terms_condition_supply
+  def general_terms_of_trade
   end
 
-  def general_terms_condition_purchase
+  def impressum
   end
 
   def privacy_policy

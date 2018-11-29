@@ -1,0 +1,37 @@
+.legal-wrapper {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
+  @media (max-width: 1200px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 12px;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+  }
+}
