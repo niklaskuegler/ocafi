@@ -2,6 +2,8 @@ class CoffeesController < ApplicationController
 
   before_action :authenticate_user!
 
+  before_action :is_admin?, only: [:edit, :update. :destroy]
+
   def index
     @coffees = Coffee.all
     @order_item = current_order.order_items.new
@@ -36,6 +38,11 @@ class CoffeesController < ApplicationController
   end
 
   private
+
+  def is_admin?
+    redirect_to root_path unless current_user.admin?
+  end
+
 
   def coffee_params
     # *Strong params*: You need to *whitelist* what can be updated by the user

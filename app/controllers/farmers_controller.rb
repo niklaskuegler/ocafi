@@ -2,6 +2,8 @@ class FarmersController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
   before_action :set_farmer, only: [:edit, :update, :destroy, :show]
 
+  before_action :is_admin?, only: [:edit, :update, :destroy]
+
 
   def index
     @farmers = Farmer.all
@@ -54,6 +56,10 @@ class FarmersController < ApplicationController
   end
 
   private
+
+  def is_admin?
+    redirect_to root_path unless current_user.admin?
+  end
 
   def farmer_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
