@@ -2,7 +2,9 @@ class CoffeesController < ApplicationController
 
   before_action :authenticate_user!
 
-  before_action :is_admin?, only: [:edit, :update. :destroy]
+  #needs to be added at some point
+
+  ##before_action :is_admin?, only: [:update. :destroy]
 
   def index
     @coffees = Coffee.all
