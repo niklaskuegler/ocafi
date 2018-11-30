@@ -27,12 +27,13 @@ class CartsController < ApplicationController
 
       OrderMailer.order_email(company_name, customer_first_name, customer_last_name, customer_email, phone_number, customer_billing_address, customer_billing_postcode, customer_billing_city, customer_billing_country, vat_number, special_request, order, order_items).deliver
 
+      #add confirmation link below this
+
+      redirect_to order_successful_path
+
       #flash does not work yet
 
       reset_session
-
-      #add confirmation link below this
-      redirect_to root_path
 
     else
       redirect_to cart_path
