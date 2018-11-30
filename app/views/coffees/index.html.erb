@@ -16,7 +16,10 @@
       </tr>
     </thead>
     <% @coffees.each do |coffee| %>
-      <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
+      <% if coffee.bags > 0 %>
+        <%= render "coffee_row", coffee: coffee, order_item: @order_item %>
+      <% else %>
+      <% end %>
     <% end %>
   </table>
 </div>
