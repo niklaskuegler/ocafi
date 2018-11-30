@@ -29,6 +29,8 @@ Rails.application.routes.draw do
 
   get "/impressum", to: "pages#impressum", as: "impressum"
 
+  get "/order-successful", to: "pages#order_successful", as: "order_successful"
+
 
 
 
