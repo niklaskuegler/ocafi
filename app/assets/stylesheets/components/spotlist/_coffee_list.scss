@@ -74,11 +74,11 @@
   background-color: $beige;
   word-wrap: break-word;
 
-  @media (max-width: 750px) {
-    min-width: 110px;
+  @media (max-width: 1400px) {
+    min-width: 130px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 750px) {
     min-width: 110px;
   }
 }
@@ -131,7 +131,7 @@
   }
 
   @media (max-width: 440px) {
-    min-width: 126px;
+    min-width: 120px;
   }
 
 }
@@ -168,7 +168,7 @@
   }
 
   @media (max-width: 440px) {
-    min-width: 126px;
+    min-width: 120px;
   }
 
 

@@ -6,8 +6,8 @@
 
 }
 
-.no-scrollbar {
-
+.scrollbar {
+  overflow-x:hidden;
 }
 
 .flex {
@@ -16,6 +16,7 @@
 
 .overflow-auto {
   overflow: auto;
+  overflow: scroll;
 }
 
 .scroll-container {
