@@ -1,6 +1,6 @@
 class OrderItem < ApplicationRecord
   belongs_to :coffee
-  belongs_to :order, dependent: :destroy
+  belongs_to :order
   validates :quantity, presence: true
   validate :coffee_present
   validates :order, presence: { message: "is not a valid order" }
