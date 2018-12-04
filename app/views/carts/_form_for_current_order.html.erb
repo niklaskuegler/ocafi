@@ -1,19 +1,19 @@
 <div class="form_for_current_order_container">
-  <span class="your-details-heading">Your details</span>
+  <span class="your-details-heading">Ihre Details</span>
   <%= form_for @order, url: cart_path do |f| %>
     <div class="order-form">
-      <%= f.text_field :company_name, placeholder: "Company Name", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_first_name, placeholder: "First Name", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_last_name, placeholder: "Last Name", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_email, placeholder: "Email address", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :phone_number, placeholder: "Phone number", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_billing_address, placeholder: "Address", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_billing_postcode, placeholder: "Postcode", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_billing_city, placeholder: "City", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :customer_billing_country, placeholder: "Country", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :vat_number, placeholder: "Vat Number", class: 'order-from-input order-input-width' %>
-      <%= f.text_field :special_request, placeholder: "Special request", class: 'order-from-input order-input-width' %>
-      <%= f.submit "Place Order", class: 'btn btn-primary' %>
+      <%= f.text_field :company_name, placeholder: "Name Unternehmen", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_first_name, placeholder: "Vorname", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_last_name, placeholder: "Nachname", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_email, placeholder: "Email-adresse", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :phone_number, placeholder: "Telefonnummer", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_address, placeholder: "Adresse", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_postcode, placeholder: "Postleitzahl", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_city, placeholder: "Stadt", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :customer_billing_country, placeholder: "Land", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :vat_number, placeholder: "Umsatzsteuer Number", class: 'order-from-input order-input-width' %>
+      <%= f.text_field :special_request, placeholder: "Sonstige Anmerkungen", class: 'order-from-input order-input-width' %>
+      <%= f.submit "Bestellen", class: 'btn btn-primary' %>
 
     </div>
     <% end %>

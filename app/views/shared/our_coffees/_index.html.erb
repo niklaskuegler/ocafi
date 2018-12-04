@@ -15,7 +15,7 @@
                       <h4><%= farmer.farm_name %> <br></h4>
                       <h4><%= farmer.first_name %> <%= farmer.last_name %> <br></h4>
                       <% if farmer.coffees.count > 1 %>
-                        <h5>Referenzen der Kaffees 1:<%= farmer.coffees.first.batch %>, <%= farmer.coffees.second.batch %></h5>
+                        <h5>Referenzen der Kaffees: <br> <%= farmer.coffees.first.batch %>, <%= farmer.coffees.second.batch %></h5>
                       <% elsif farmer.coffees.count == 1 %>
                         <h5>Referenz Kaffee: <%= farmer.coffees.first.batch %></h5>
                       <% else %>
