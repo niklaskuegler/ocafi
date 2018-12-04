@@ -9,7 +9,7 @@
 <% end %>
 <% if @order_items.size == 0 %>
   <p class="text-center">
-    There are no items in your shopping cart.  Please <%= link_to "go back", coffees_path %> and add some items to your cart.
+    Es befinden sich momentan keine Gegenstände in Ihrem Einkaufswagen.  Bitte <%= link_to "zur Spotlist", coffees_path %> und fügen Sie Kaffeesäcke oder Proben zu Ihrem Einkaufswagen hinzu.
   </p>
 <% else %>
   <% if @order_items.any? { |u| u[:quantity] > 0 } %>

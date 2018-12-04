@@ -14,7 +14,9 @@
       </div>
       <div id="<%= coffee.slug %>" class="overlay">
         <div class="popup">
-          <span class="center-heading">Über diesen Kaffee</span>
+          <div class="popup-heading">
+            <span class="center-heading">Über diesen Kaffee</span>
+          </div>
           <a class="close" href="/coffees" style="background-color: white;">&times;</a>
           <div class="content-farm">
               <p><%= coffee.farmer.long_description.first(400) %>...   <a href="farmers/<%= coffee.farmer.id %>">Mehr Erfahren</a>
@@ -69,7 +71,9 @@
                   <p class="technical-info-popup">Cup Profil:</p><p><%= coffee.flavor1 %>, <%= coffee.flavor2 %>, <%= coffee.flavor3 %></p>
                 </li>
                 <li>
-                  <p class="technical-info-popup">Cup Beschreibung:</p>
+                  <p class="technical-info-popup" style="margin-bottom: 0;">Cup Beschreibung:</p>
+                </li>
+                <li>
                   <p class="cup_description"><%= coffee.cup_description %></p>
                 </li>
               </ul>

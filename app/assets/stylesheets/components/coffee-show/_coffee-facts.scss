@@ -31,7 +31,6 @@
 
 .flavor-profile-item {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .col-1 {
@@ -75,7 +74,12 @@
   justify-content: center;
   height: 50px;
   width: 50px;
+}
 
+//Heading in coffee facts
+
+.heading-coffee-facts {
+  margin-bottom: 0;
 }
 
 // Flavor size

@@ -5,7 +5,22 @@
       <a class="navbar-spotlist-buttons" href="/coffees">Spotlist</a>
     </div>
     <div class="col-sm-6 col-xs-12 spotlist-navbar-segment">
-      <a class="navbar-spotlist-buttons" href="/cart"><%=  current_order.bags %> Säcke im Einkaufswagen</a>
+
+      <% if current_order.bags >= 1 %>
+        <% if current_order.bags == 1 %>
+          <a class="navbar-spotlist-buttons" href="/cart"><%=  current_order.bags %> Sack im Einkaufswagen</a>
+        <% else %>
+          <a class="navbar-spotlist-buttons" href="/cart"><%=  current_order.bags %> Säcke im Einkaufswagen</a>
+        <% end %>
+      <% elsif current_order.order_items.count >= 1 %>
+        <% if current_order.order_items.count == 1 %>
+          <a class="navbar-spotlist-buttons" href="/cart"><%=  current_order.order_items.count %> Probe im Einkaufswagen</a>
+        <% else %>
+          <a class="navbar-spotlist-buttons" href="/cart"><%=  current_order.order_items.count %> Proben im Einkaufswagen</a>
+        <% end %>
+      <% else %>
+        <a class="navbar-spotlist-buttons" href="/cart">Hier gehts zum Einkaufswagen</a>
+      <% end %>
     </div>
     <!-- <div class="col-sm-4 col-xs-12 spotlist-navbar-segment">
       <a class="navbar-spotlist-buttons" href="/coffees">My Contracts</a>

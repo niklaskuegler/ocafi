@@ -72,14 +72,14 @@
     border-bottom:solid 1px black;
     word-wrap: break-word;
     background-color: white;
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 180px);
     overflow-y: auto;
     //background-image: image-url("arte2.jpg");
     //background-position: center center;
     //background-repeat: no-repeat;
     //background-size: cover;
 
-     @media (max-width: 750px) {
+    @media (max-width: 750px) {
       width: 70%;
     }
 
@@ -92,6 +92,16 @@
     font-size:bold;
     border-bottom:solid 1px black;
     word-wrap: break-word;
+  }
+
+  //Heading for popup
+
+  .popup-heading {
+    @media (max-width: 520px) {
+      span {
+        font-size: 22px;
+      }
+    }
   }
 
   span{
@@ -109,7 +119,7 @@
   }
 
   .top {
-      height: 150px;
+      height: 160px;
     }
 
   li {
@@ -249,4 +259,7 @@
   padding-left: 35px;
   padding-right: 35px;
 }
+
+
+
 

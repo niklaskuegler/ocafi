@@ -1,11 +1,11 @@
 <div class="spotlist-navbar-container">
   <% if @order_items.any? { |u| u[:quantity] > 0 } %>
-    <h5>Complete your Order</h5>
+    <h5>Schließen Sie Ihre Bestellung ab</h5>
 
   <% elsif @order_items.any? { |h| h[:sample] == true } %>
-    <h5>Complete your Order</h5>
+    <h5>Schließen Sie Ihre Bestellung ab</h5>
   <% else %>
-    <h5>There are no Items in your cart</h5>
+    <h5>Ihr Einkaufswagen</h5>
   <% end %>
 
 
