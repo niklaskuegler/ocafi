@@ -1,4 +1,9 @@
 .banner-misson {
+  @media (max-width: 440px) {
+    p {
+      font-size: 16px;
+    }
+  }
 }
 //image-mission-vision
 //banner-text
