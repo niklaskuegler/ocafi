@@ -49,9 +49,12 @@
                 <li>
                   <p class="technical-info-popup">Prozess:</p><p><%= coffee.process %></p>
                 </li>
-                <li>
-                  <p class="technical-info-popup">Zertifikationen:</p><p><%= coffee.certification%></p>
-                </li>
+                <% if coffee.certification == "" %>
+                <% else coffee.certification.nil? == false %>
+                  <li>
+                    <p class="technical-info-popup">Zertifikationen:</p><p><%= coffee.certification%></p>
+                  </li>
+                <% end %>
                 <li>
                   <p class="technical-info-popup">Jahr:</p><p><%= coffee.year %></p>
                 </li>
