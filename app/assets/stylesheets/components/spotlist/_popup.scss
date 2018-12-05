@@ -1,3 +1,16 @@
+.vertical-align-link-a-spotlist {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 41px;
+}
+
+.spotlist-a {
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+}
+
 .popup-container-country {
 
   z-index: 2;
@@ -13,20 +26,22 @@
   }
 
 
-  .box {
-    width: 100%;
-    height: 100%;
-
+  .link-box-spotlist-popup {
+    //width: 100%;
+    //height: 100%;
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 1px;
   }
 
   .button{
-    padding-left: 5px;
-    padding-right: 30%;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    //padding-left: 5px;
+    //padding-right: 30%;
+    //padding-top: 7px;
+    //padding-bottom: 7px;
     font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: $gray-corporate;
     background-color: orange;
     text-decoration: none;
     justify-content: space-around;
