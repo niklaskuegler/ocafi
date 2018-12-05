@@ -65,8 +65,8 @@ ActiveRecord::Schema.define(version: 2018_11_21_163602) do
     t.string "farm_landscape8"
     t.string "farm_landscape9"
     t.string "farm_landscape10"
-    t.string "short_description"
-    t.string "long_description"
+    t.text "short_description"
+    t.text "long_description"
     t.bigint "user_id"
     t.string "slug"
     t.index ["slug"], name: "index_farmers_on_slug", unique: true
