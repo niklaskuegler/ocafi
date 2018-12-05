@@ -1,4 +1,5 @@
 <tr>
+  <td class="td-basic"><%= coffee.batch %></td>
   <td class="td-basic"><%= coffee.farmer.farm_name %></td>
   <td class="td-basic"><%= coffee.bags %></td>
   <td class="td-basic">Spot</td>
@@ -9,13 +10,15 @@
   <td class="td-basic th-last-right"><%= coffee.price2 %></td>
   <td class="no-padding-button td-fixed fixed-td-col">
     <div class="popup-container-country">
-      <div class="box">
-        <a class="button" href="#<%= coffee.slug %>">Bestellen</a>
+      <div class="link-box-spotlist-popup box">
+        <div class="spotlist-a">
+          <a class="button vertical-align-link-a-spotlist" href="#<%= coffee.slug %>">Bestellen</a>
+        </div>
       </div>
       <div id="<%= coffee.slug %>" class="overlay">
         <div class="popup">
           <div class="popup-heading">
-            <span class="center-heading">Über diesen Kaffee</span>
+            <span class="center-heading">Über <%= coffee.batch %> </span>
           </div>
           <a class="close" href="/coffees" style="background-color: white;">&times;</a>
           <div class="content-farm">
@@ -47,9 +50,12 @@
                 <li>
                   <p class="technical-info-popup">Prozess:</p><p><%= coffee.process %></p>
                 </li>
-                <li>
-                  <p class="technical-info-popup">Zertifikationen:</p><p><%= coffee.certification%></p>
-                </li>
+                <% if coffee.certification == "" %>
+                <% else coffee.certification.nil? == false %>
+                  <li>
+                    <p class="technical-info-popup">Zertifikationen:</p><p><%= coffee.certification%></p>
+                  </li>
+                <% end %>
                 <li>
                   <p class="technical-info-popup">Jahr:</p><p><%= coffee.year %></p>
                 </li>

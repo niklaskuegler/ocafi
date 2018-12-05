@@ -156,12 +156,13 @@
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <% if user_signed_in? %>
-        <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <i class="fas fa-bars dropdown-toggle burger-bigger-click-area" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
-          <li><%= link_to "Farmers", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Das Team", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Die Farmer", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Einkaufswagen", "/cart", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <!--<li><%= link_to "#" do %>
             <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
             <% end %>
@@ -173,10 +174,10 @@
           </li>
         </ul>
       <% else %>
-        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <i class="fas fa-bars dropdown-toggle burger-bigger-click-area" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><%= link_to "About Us", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
-          <li><%= link_to "Farmers", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Das Team", "/about-us", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Die Farmer", "/farmers", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Misson & Vision", "/mission-vision", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Spotlist", "/coffees", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
